@@ -1,10 +1,10 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import React from "react";
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+
       <div className="text-8xl">Tests</div>
       <div className="text-8xl">Tests</div>
       <div className="text-8xl">Tests</div>
