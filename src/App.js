@@ -1,32 +1,28 @@
 import "./App.css";
-// import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CatanBuddy from "./pages/CatanBuddy";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import NoPage from "./pages/NoPage";
 import React from "react";
+import Navbar from "./components/Navbar";
+import Hobbies from "./pages/Hobbies";
+
 function App() {
   return (
-    <React.Fragment>
-
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div className="text-8xl">Tests</div>
-      <div id="about" className="text-8xl">
-        Tests
-      </div>
-
-      <section id="projects">PROJECTS</section>
-      <section id="blog">BLOG</section>
-      <section id="contact">CONTACT ME</section>
-    </React.Fragment>
+    <div className=" justify-center">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="catan-buddy" element={<CatanBuddy />} />
+          <Route path="hobbies" element={<Hobbies />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </div>
   );
 }
 
