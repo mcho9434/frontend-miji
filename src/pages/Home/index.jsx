@@ -13,7 +13,16 @@ const Home = () => {
       </div>
       <div className="mt-3">
         &emsp;Every part of this website was written from scratch, no webflow or
-        website builders
+        website builders.
+      </div>
+      <div className="mt-3">
+        &emsp;Here's the code to this site:{" "}
+        <a
+          className="underline font-semibold"
+          href="https://github.com/mcho9434/matthew-portfolio"
+        >
+          GITHUB
+        </a>
       </div>
     </div>
   );
