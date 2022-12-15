@@ -1,9 +1,12 @@
+import clsx from "clsx";
 import React from "react";
+import useIsMobile from "../utils/useIsMobile";
 
 const Card = ({ children }) => {
+  const isMobile = useIsMobile();
   return (
     <div className="w-full flex justify-center">
-      <div className="m-4 !w-[800px]">{children}</div>
+      <div className={clsx("m-4", { "!w-[800px]": !isMobile })}>{children}</div>
     </div>
   );
 };

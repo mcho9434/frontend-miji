@@ -1,8 +1,8 @@
 import React from "react";
 
 import Divider from "../../../components/Divider";
-import Beacons from "../Beacons";
-import Otis from "../Otis";
+import Beacons from "./Beacons";
+import Otis from "./Otis";
 
 const Internships = () => {
   return (

@@ -10,18 +10,18 @@ import Hobbies from "./pages/Hobbies";
 
 function App() {
   return (
-    <div className=" justify-center">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="catan-buddy" element={<CatanBuddy />} />
-          <Route path="hobbies" element={<Hobbies />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="font-satoshi">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="catan-buddy" element={<CatanBuddy />} />
+            <Route path="hobbies" element={<Hobbies />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
