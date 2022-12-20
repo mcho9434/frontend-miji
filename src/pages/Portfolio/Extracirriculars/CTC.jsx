@@ -23,6 +23,7 @@ const CTC = () => {
           organization as a freshman and have since participated as a developer,
           technical lead, and an executive board member.
         </div>
+        <img className="w-60 aspect-[9/16]" src="CTC.jpg" alt="CTC RFP" />
         <div>
           &emsp;In my first year, I worked with Humans Against Trafficking to
           write predictive models for the vulnerabilities of social media

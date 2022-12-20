@@ -8,8 +8,8 @@ const Home = () => {
         you can tell I am an engineer and not a designer. :)
       </div>
       <div className="mt-3">
-        &emsp;This website hosts lots of stuff, from a professional portfolio,
-        cool links, a settlers of catan timer.
+        &emsp;This website hosts a variety of things, from a professional
+        portfolio, a settlers of catan timer/visualizer.
       </div>
       <div className="mt-3">
         &emsp;Every part of this website was written from scratch, no webflow or
