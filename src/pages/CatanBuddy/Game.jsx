@@ -143,7 +143,7 @@ const Game = ({
               className={clsx(
                 "p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer",
                 {
-                  "pointer-events-none bg-slate-100 text-slate-300 border-slate-500":
+                  "pointer-events-none text-slate-300 border-slate-500":
                     gameStarted && isDiceValid,
                 }
               )}
@@ -173,7 +173,7 @@ const Game = ({
                 className={clsx(
                   "p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer",
                   {
-                    "pointer-events-none bg-slate-100 text-slate-300 border-slate-500":
+                    "pointer-events-none text-slate-300 border-slate-500":
                       isDiceValid,
                   }
                 )}
