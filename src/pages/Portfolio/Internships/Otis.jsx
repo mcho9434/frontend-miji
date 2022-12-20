@@ -1,14 +1,18 @@
 import React from "react";
+import useIsMobile from "../../../utils/useIsMobile";
 
 const Otis = () => {
+  const isMobile = useIsMobile();
   return (
     <div className="">
       <div className="flex w-full justify-between">
         <div>
           <span className="text-xl font-semibold mr-4 ">Otis</span>
-          <span className="!justify-self-end">Farmington, Connecticut</span>
+          {!isMobile && (
+            <span className="!justify-self-end">Farmington, Connecticut</span>
+          )}
         </div>
-        <span className="text-lg italic">May 2022 - July 2022 (11 weeks)</span>
+        <span className="text-lg italic">May 2022 - July 2022</span>
       </div>
       <div>
         &emsp;I worked at{" "}
@@ -36,14 +40,17 @@ const Otis = () => {
         newer Java; many of the core features in the original code had been
         removed in newer versions, precluding a direct solution. Additionally,
         even if a translation was produced, it would be difficult to verify
-        everything had carried over properly. As such, I took the initative to
-        propose a React rewrite. Although key stakeholders were unknowing of
-        React, I even took the time outside work to develop a short presentation
-        to pitch this idea. Overall, the proposal was approved and I was
-        successful in rewriting significant portions of the code, reducing
-        paylod size by nearly 90%. I found it incredibly interesting to be
-        coding for a uniquely hardware product, rather than the conventional
-        pure software solutions I was used to.
+        everything had carried over properly.
+        <div>
+          &emsp;As such, I took the initative to propose a React rewrite.
+          Although key stakeholders were unknowing of React, I even took the
+          time outside work to develop a short presentation to pitch this idea.
+          Overall, the proposal was approved and I was successful in rewriting
+          significant portions of the code, reducing paylod size by nearly 90%.
+          I found it incredibly interesting to be coding for a uniquely hardware
+          product, rather than the conventional pure software solutions I was
+          used to.
+        </div>
       </div>
       <div className="mt-2">
         <span className="font-semibold">Skills used: </span>

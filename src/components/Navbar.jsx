@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, Link, useLocation } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,9 +9,6 @@ import Drawer from "@mui/material/Drawer";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const location = useLocation();
-  console.log(location);
 
   const isMobile = useIsMobile();
 
@@ -132,8 +129,7 @@ const Navbar = () => {
               <div
                 className="p-3 hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
                 onClick={() =>
-                  (window.location =
-                    "https://www.linkedin.com/in/matthew-cho-usc/")
+                  (window.location = "https://github.com/mcho9434")
                 }
               >
                 <GitHubIcon className="!w-8 !h-8" />

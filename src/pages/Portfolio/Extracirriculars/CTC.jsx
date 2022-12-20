@@ -1,53 +1,56 @@
 import React from "react";
-
+import useIsMobile from "../../../utils/useIsMobile";
 const CTC = () => {
+  const isMobile = useIsMobile();
   return (
     <div className="">
       <div className="flex w-full justify-between">
         <div>
-          <span className="text-xl font-semibold mr-4 ">Beacons</span>
-          <span className="!justify-self-end">San Francisco, California</span>
+          <span className="text-xl font-semibold mr-4 ">Code the Change</span>
+          {!isMobile && (
+            <span className="!justify-self-end">Los Angeles, California</span>
+          )}
         </div>
-        <span className="text-lg italic">
-          August 2022 - December 2022 (15 weeks)
-        </span>
+        <span className="text-lg italic">August 2020 - Present</span>
       </div>
       <div>
         <div>
-          &emsp;I worked at{" "}
-          <a className="underline font-semibold" href="https://beacons.ai/">
-            Beacons
-          </a>{" "}
-          as a software engineering intern in the fall semester of my junior
-          year. Beacons is an early-stage startup focused on making an
-          all-in-one toolkit for creators. I was a part of the growth team,
-          focused on the core link-in-bio product(
-          <a
-            className="underline font-semibold"
-            href="https://beacons.ai/mjycho"
-          >
-            Here's
-          </a>{" "}
-          mine).
+          &emsp;Code the Change is a student organization in the Viterbi School
+          of Engineering. It's goal is to provide pro-bono software solutions to
+          non-profits in the Los Angeles area. The organization functions like a
+          conventional product developemnt team, with students acting as product
+          managers, technical leads, designers and developers.I joined the
+          organization as a freshman and have since participated as a developer,
+          technical lead, and an executive board member.
         </div>
         <div>
-          &emsp;I was a full time engineer on the team, trusted to deliver
-          impactful features and solve key bugs on a timely basis. I
-          particularly appreciated how my managers gave me the autonomy to truly
-          have the responsibilites of a full-time engineer rather than an
-          intern. For example, I'd maintain a similar contribution rate to other
-          full-time engineers and participate in a variety of team meetings,
-          from standups to sprint retros. Especially since it was an internship
-          in place of university, I felt a greater pace of learning both in
-          techincal skill but also in learning to communicate effectively with
-          product managers and designers.
+          &emsp;In my first year, I worked with Humans Against Trafficking to
+          write predictive models for the vulnerabilities of social media
+          accounts to human trafficking. Analyzing instagram bio's that were
+          manually labeled, we were able to write a model that achieved a 54%
+          accuracy when predicting between 6 categories.
+        </div>
+        <div>
+          &emsp;In my second year, I worked with the Ron Finley Project to write
+          a CRM-esque product to process inquiries of the organization and an
+          additional product to manage the thousands of yearly seasonal
+          volunteers. It was my first experience acting as a technical lead, and
+          gave me a lot of insight about more product oriented thinking. I spent
+          much more time talking with other engineers or writing tasks than I
+          did actually writing code.
+        </div>
+        <div>
+          &emsp;In my third year, I was the Head of Product for the
+          organization; this meant that I was solely responsible for the client
+          selection process and also handing off clients to their respective
+          product teams. I personally reached out to hundreds of non-profits of
+          varying focus within the Los Angeles area and selected the top 3. I
+          unfortunately took a leave of absence in order to intern, but I was
+          able to complete my duties in my open time.
         </div>
         <div className="mt-2">
           <span className="font-semibold">Skills used: </span>
-          <span>
-            React, Typescript, TailwindCSS, PostgreSQL, Firebase, Docker,
-            Jest+RTL
-          </span>
+          <span>React, TailwindCSS, PostgreSQL, TensorFlow, word2vec</span>
         </div>
       </div>
     </div>

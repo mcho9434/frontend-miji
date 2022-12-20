@@ -8,6 +8,12 @@ const Portfolio = () => {
   console.log(isMobile);
   const [tabItem, setTabItem] = useState("internships");
 
+  const [previewView, setPreviewView] = useState(true);
+
+  const [showInternships, setShowInternships] = useState(true);
+  const [showExtracirriculars, setShowExtracirriculars] = useState(true);
+  const [showHobbies, setShowHobbies] = useState(false);
+
   return (
     <Card>
       <div className="mb-2">

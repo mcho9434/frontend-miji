@@ -1,16 +1,18 @@
 import React from "react";
+import useIsMobile from "../../../utils/useIsMobile";
 
 const Beacons = () => {
+  const isMobile = useIsMobile();
   return (
     <div className="">
       <div className="flex w-full justify-between">
         <div>
           <span className="text-xl font-semibold mr-4 ">Beacons</span>
-          <span className="!justify-self-end">San Francisco, California</span>
+          {!isMobile && (
+            <span className="!justify-self-end">San Francisco, California</span>
+          )}
         </div>
-        <span className="text-lg italic">
-          August 2022 - December 2022 (15 weeks)
-        </span>
+        <span className="text-lg italic">August 2022 - December 2022</span>
       </div>
       <div>
         <div>
@@ -40,7 +42,9 @@ const Beacons = () => {
           from standups to sprint retros. Especially since it was an internship
           in place of university, I felt a greater pace of learning both in
           techincal skill but also in learning to communicate effectively with
-          product managers and designers.
+          product managers and designers. It was also really insightful to be
+          able to work directly with founders on their product due to the nature
+          of a small company.
         </div>
         <div className="mt-2">
           <span className="font-semibold">Skills used: </span>

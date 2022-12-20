@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import CatanBuddy from "./pages/CatanBuddy";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
