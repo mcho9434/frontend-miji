@@ -10,7 +10,6 @@ import Six from "./Dice/Six";
 import clsx from "clsx";
 import { Bar } from "react-chartjs-2";
 import "chart.js/auto";
-import useIsMobile from "../../utils/useIsMobile";
 
 const roll = () => {
   return Math.floor(Math.random() * 6) + 1;
@@ -33,7 +32,10 @@ const Game = ({
   setPlayerNames,
 }) => {
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
+  const [turnNumber, setTurnNumber] = useState(0);
 
+  const [isDiceValid, setIsDiceValid] = useState(true);
   const [diceRollTotal, setDiceRollTotal] = useState(-1);
   const [diceRoll1, setDiceRoll1] = useState(-1);
   const [diceRoll2, setDiceRoll2] = useState(-1);
@@ -41,6 +43,7 @@ const Game = ({
   const [diceFrequency, setDiceFrequency] = useState([
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
+
   const [isCounting, setIsCounting] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(maxTurnTime);
   const [isTimeUp, setIsTimeUp] = useState(false);
@@ -51,8 +54,6 @@ const Game = ({
     playerNames.player3,
     playerNames.player4,
   ];
-
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -74,7 +75,9 @@ const Game = ({
         <div className="w-full text-lg">Catan buddy</div>
         <Divider />
         <div className="flex flex-col items-center">
-          <div className="text-2xl">{players[currentPlayerIndex]}'s turn</div>
+          <div className="text-2xl">
+            {players[currentPlayerIndex]}'s turn(Turn {turnNumber})
+          </div>
           {!isTimeUp ? (
             <div
               className={clsx({
@@ -99,42 +102,60 @@ const Game = ({
               Navigate to the first player and hit Roll Dice to start!
             </div>
           )}
-          <div
-            className={clsx({
-              "flex w-full mt-4 justify-around": isMobile,
-              "grid grid-cols-3 gap-4 mt-4": !isMobile,
-            })}
-          >
+          <div className="flex w-full mt-4 justify-center gap-4">
             <div
-              className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
+              className={clsx(
+                "p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer",
+                {
+                  "pointer-events-none bg-slate-100 text-slate-300 border-slate-500":
+                    gameStarted && !isDiceValid,
+                }
+              )}
               onClick={() => {
-                const roll1 = roll();
-                const roll2 = roll();
+                if (isDiceValid) {
+                  const roll1 = roll();
+                  const roll2 = roll();
 
-                setDiceRoll1(roll1);
-                setDiceRoll2(roll2);
-                setDiceRollTotal(roll1 + roll2);
+                  setDiceRoll1(roll1);
+                  setDiceRoll2(roll2);
+                  setDiceRollTotal(roll1 + roll2);
 
-                setDiceHistory((prevHistory) => {
-                  return prevHistory.concat([roll1 + roll2]);
-                });
+                  setDiceHistory((prevHistory) => {
+                    return prevHistory.concat([roll1 + roll2]);
+                  });
 
-                setDiceFrequency((previousFrequency) => {
-                  previousFrequency[roll1 + roll2 - 2] += 1;
-                  return previousFrequency;
-                });
+                  setDiceFrequency((previousFrequency) => {
+                    previousFrequency[roll1 + roll2 - 2] += 1;
+                    return previousFrequency;
+                  });
 
-                setIsCounting(true);
+                  setIsCounting(true);
+                  setIsDiceValid(false);
+                  if (!gameStarted) {
+                    setGameStarted(true);
+                  }
+                }
               }}
             >
               Roll Dice
             </div>
             <div
-              className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
+              className={clsx(
+                "p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer",
+                {
+                  "pointer-events-none bg-slate-100 text-slate-300 border-slate-500":
+                    gameStarted && isDiceValid,
+                }
+              )}
               onClick={() => {
                 setIsCounting(false);
                 setTimeRemaining(maxTurnTime);
                 setIsTimeUp(false);
+                if (currentPlayerIndex === 3 && gameStarted) {
+                  setTurnNumber((prevTurn) => {
+                    return prevTurn + 1;
+                  });
+                }
                 setCurrentPlayerIndex((prevIndex) => {
                   if (prevIndex === 3) {
                     return 0;
@@ -142,10 +163,29 @@ const Game = ({
                     return prevIndex + 1;
                   }
                 });
+                setIsDiceValid(true);
               }}
             >
               Next Player
             </div>
+            {gameStarted && (
+              <div
+                className={clsx(
+                  "p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer",
+                  {
+                    "pointer-events-none bg-slate-100 text-slate-300 border-slate-500":
+                      isDiceValid,
+                  }
+                )}
+                onClick={() => {
+                  setIsCounting((prevCounting) => {
+                    return !prevCounting;
+                  });
+                }}
+              >
+                {isCounting ? "Pause Timer" : "Resume Timer"}
+              </div>
+            )}
             <div
               className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
               onClick={() => {
@@ -165,8 +205,10 @@ const Game = ({
             Previous rolls:{" "}
             {diceHistory.slice(Math.max(diceHistory.length - 10, 0)).join(", ")}
           </div>
-          <div>
+          <div className="w-full">
             <Bar
+              className="w-full"
+              options={{ responsive: true }}
               data={{
                 labels: [
                   "2",

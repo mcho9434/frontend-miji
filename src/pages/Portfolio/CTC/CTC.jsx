@@ -13,7 +13,7 @@ const CTC = () => {
         </div>
         <span className="text-lg italic">August 2020 - Present</span>
       </div>
-      <div>
+      <div className="mt-4">
         <div>
           &emsp;Code the Change is a student organization in the Viterbi School
           of Engineering. It's goal is to provide pro-bono software solutions to
@@ -23,7 +23,11 @@ const CTC = () => {
           organization as a freshman and have since participated as a developer,
           technical lead, and an executive board member.
         </div>
-        <img className="w-60 aspect-[9/16]" src="CTC.jpg" alt="CTC RFP" />
+        <img
+          className="w-60 aspect-[9/16] m-auto"
+          src="CTC.jpg"
+          alt="CTC RFP"
+        />
         <div>
           &emsp;In my first year, I worked with Humans Against Trafficking to
           write predictive models for the vulnerabilities of social media

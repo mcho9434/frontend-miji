@@ -17,7 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="catan-buddy" element={<CatanBuddy />} />
-            <Route path="hobbies" element={<Hobbies />} />
+            {/* <Route path="hobbies" element={<Hobbies />} /> */}
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

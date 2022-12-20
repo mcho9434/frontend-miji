@@ -1,16 +1,21 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import useIsMobile from "../utils/useIsMobile";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
+import clsx from "clsx";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const isMobile = useIsMobile();
+
+  const location = useLocation().pathname;
+
+  console.log(location === "/");
 
   if (isMobile) {
     return (
@@ -59,12 +64,12 @@ const Navbar = () => {
                   >
                     Catan Buddy
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/hobbies"
                     className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
                   >
                     Hobbies
-                  </Link>
+                  </Link> */}
                 </div>
                 <div>
                   <div className="flex gap-2">
@@ -141,28 +146,46 @@ const Navbar = () => {
             <div className="flex mr-4 gap-4">
               <Link
                 to="/"
-                className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
+                className={clsx(
+                  "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
+                  {
+                    "underline underline-offset-2 font-semibold ":
+                      location === "/",
+                  }
+                )}
               >
                 Home
               </Link>
               <Link
                 to="/portfolio"
-                className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
+                className={clsx(
+                  "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
+                  {
+                    "underline underline-offset-2 font-semibold ":
+                      location === "/portfolio",
+                  }
+                )}
               >
                 Portfolio
               </Link>
               <Link
                 to="/catan-buddy"
-                className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
+                className={clsx(
+                  "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
+                  {
+                    "underline underline-offset-2 font-semibold ":
+                      location === "/catan-buddy",
+                  }
+                )}
               >
                 Catan Buddy
               </Link>
-              <Link
+              {/* <Link
                 to="/hobbies"
                 className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
               >
                 Hobbies
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>

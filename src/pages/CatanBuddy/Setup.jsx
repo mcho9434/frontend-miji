@@ -29,7 +29,18 @@ const Setup = ({
   return (
     <Card>
       <div className="flex flex-col">
-        <div className="w-full text-lg">Catan buddy</div>
+        <div className="w-full text-lg">Catan Buddy</div>
+        <Divider />
+        <div>
+          &emsp;Catan Buddy is a support application for the popular board game
+          Settlers of Catan. My family and I have been Catan enjoyers for years,
+          even having a seasonal Cho family championship. However, we have
+          always struggled to have quick dice rolls, keep each player equitable
+          in time, and remember what was rolled previously. After being
+          unsuccessful in find an app to do this, I decided to create Catan
+          Buddy! Feel free to pull this up the next time you think someone is
+          taking too long to move...
+        </div>
         <Divider />
         <div
           className={clsx("grid  gap-4", {
@@ -38,7 +49,7 @@ const Setup = ({
           })}
         >
           <div className="flex items-center">
-            <span className="">Set Turn Time:</span>
+            <span className="mr-2">Set Turn Time:</span>
             <TextField
               value={maxTurnTime}
               onChange={(e) => {
@@ -49,7 +60,7 @@ const Setup = ({
               style={{ width: 100 }}
             />
           </div>
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <span>Set Place Time:</span>
             <TextField
               value={maxPlaceTime}
@@ -60,9 +71,9 @@ const Setup = ({
               size="small"
               style={{ width: 100 }}
             />
-          </div>
+          </div> */}
           <div className="flex items-center">
-            <span className="">Player 1 Name:</span>
+            <span className="mr-2">Player 1 Name:</span>
             <TextField
               value={playerNames.player1}
               onChange={(e) => {
@@ -75,7 +86,7 @@ const Setup = ({
             />
           </div>
           <div className="flex items-center">
-            <span className="">Player 2 Name:</span>
+            <span className="mr-2">Player 2 Name:</span>
             <TextField
               value={playerNames.player2}
               onChange={(e) => {
@@ -88,7 +99,7 @@ const Setup = ({
             />
           </div>
           <div className="flex items-center">
-            <span className="">Player 3 Name:</span>
+            <span className="mr-2">Player 3 Name:</span>
             <TextField
               value={playerNames.player3}
               onChange={(e) => {
@@ -101,7 +112,7 @@ const Setup = ({
             />
           </div>
           <div className="flex items-center">
-            <span className="">Player 4 Name:</span>
+            <span className="mr-2">Player 4 Name:</span>
             <TextField
               value={playerNames.player4}
               onChange={(e) => {

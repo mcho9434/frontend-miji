@@ -13,7 +13,7 @@ const Lavalab = () => {
         </div>
         <span className="text-lg italic">January 2022 - Present</span>
       </div>
-      <div>
+      <div className="mt-4">
         <div>
           &emsp;Lavalab is a entrepreneurial, product development student
           origanization that aims to get students from ideation to prototyping

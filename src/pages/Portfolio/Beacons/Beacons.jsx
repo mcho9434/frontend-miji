@@ -14,7 +14,7 @@ const Beacons = () => {
         </div>
         <span className="text-lg italic">August 2022 - December 2022</span>
       </div>
-      <div>
+      <div className="mt-4">
         <div>
           &emsp;I worked at{" "}
           <a className="underline font-semibold" href="https://beacons.ai/">
