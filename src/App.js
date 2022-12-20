@@ -6,7 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import NoPage from "./pages/NoPage";
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hobbies from "./pages/Hobbies";
+// import Hobbies from "./pages/Hobbies";
 
 function App() {
   return (
