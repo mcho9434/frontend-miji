@@ -2,6 +2,8 @@ import React from "react";
 import Card from "../../components/Card";
 import TextField from "@mui/material/TextField";
 import Divider from "../../components/Divider";
+import clsx from "clsx";
+import useIsMobile from "../../utils/useIsMobile";
 
 const roll = () => {
   return Math.round(Math.random());
@@ -23,13 +25,18 @@ const Setup = ({
     !!playerNames.player2 &&
     !!playerNames.player3 &&
     !!playerNames.player4;
-
+  const isMobile = useIsMobile();
   return (
     <Card>
       <div className="flex flex-col">
         <div className="w-full text-lg">Catan buddy</div>
         <Divider />
-        <div className="grid grid-cols-3 gap-3">
+        <div
+          className={clsx("grid  gap-4", {
+            "grid-cols-2": isMobile,
+            "grid-cols-3": !isMobile,
+          })}
+        >
           <div className="flex items-center">
             <span className="">Set Turn Time:</span>
             <TextField
@@ -43,7 +50,7 @@ const Setup = ({
             />
           </div>
           <div className="flex items-center">
-            <span className="">Set Placement Time:</span>
+            <span>Set Place Time:</span>
             <TextField
               value={maxPlaceTime}
               onChange={(e) => {

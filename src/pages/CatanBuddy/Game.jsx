@@ -10,6 +10,7 @@ import Six from "./Dice/Six";
 import clsx from "clsx";
 import { Bar } from "react-chartjs-2";
 import "chart.js/auto";
+import useIsMobile from "../../utils/useIsMobile";
 
 const roll = () => {
   return Math.floor(Math.random() * 6) + 1;
@@ -50,6 +51,8 @@ const Game = ({
     playerNames.player3,
     playerNames.player4,
   ];
+
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -96,7 +99,12 @@ const Game = ({
               Navigate to the first player and hit Roll Dice to start!
             </div>
           )}
-          <div className="grid grid-cols-3 gap-4 mt-4">
+          <div
+            className={clsx({
+              "flex w-full mt-4 justify-around": isMobile,
+              "grid grid-cols-3 gap-4 mt-4": !isMobile,
+            })}
+          >
             <div
               className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
               onClick={() => {

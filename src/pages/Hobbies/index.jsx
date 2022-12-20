@@ -1,8 +1,11 @@
 import React from "react";
 import Card from "../../components/Card";
 import Divider from "../../components/Divider";
-
+import useIsMobile from "../../utils/useIsMobile";
+import clsx from "clsx";
 const Hobbies = () => {
+  const isMobile = useIsMobile();
+
   return (
     <Card>
       <div>
@@ -11,14 +14,19 @@ const Hobbies = () => {
           doing today!
         </div>
         <Divider />
-        <div className="grid grid-cols-3 gap-4">
-          <div className="aspect-square border border-black text-center">
+        <div
+          className={clsx("grid gap-4", {
+            "grid-cols-2": isMobile,
+            "grid-cols-3": !isMobile,
+          })}
+        >
+          <div className="aspect-square border border-black text-center rounded-lg p-2">
             Mechanical Keyboards!
           </div>
-          <div className="aspect-square border border-black text-center">
+          <div className="aspect-square border border-black text-center rounded-lg p-2">
             E-Skating/Carving
           </div>
-          <div className="aspect-square border border-black text-center">
+          <div className="aspect-square border border-black text-center rounded-lg p-2">
             Lockpicking
           </div>
         </div>

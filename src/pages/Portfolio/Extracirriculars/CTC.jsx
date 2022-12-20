@@ -42,10 +42,10 @@ const CTC = () => {
         </div>
         <div>
           &emsp;In my third year, I was the Head of Product for the
-          organization; this meant that I was solely responsible for the client
-          selection process and also handing off clients to their respective
-          product teams. I personally reached out to hundreds of non-profits of
-          varying focus within the Los Angeles area and selected the top 3. I
+          organization; I was solely responsible for the client selection
+          process and also handing off clients to their respective product
+          teams. I personally reached out to hundreds of non-profits of varying
+          focus within the Los Angeles area and selected the top 3. I
           unfortunately took a leave of absence in order to intern, but I was
           able to complete my duties in my open time.
         </div>
