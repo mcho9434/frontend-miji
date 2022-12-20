@@ -12,7 +12,7 @@ import CTCPreview from "./CTC/CTCPreview";
 import LavalabPreview from "./Lavalab/LavalabPreview";
 import OtisPreview from "./Otis/OtisPreview";
 import WebsitePreview from "./Website/WebsitePreview";
-
+import Website from "./Website/Website";
 const Portfolio = () => {
   const [showTextView, setShowTextView] = useState(false);
 
@@ -66,6 +66,12 @@ const Portfolio = () => {
         <>
           <Divider />
           <div>Nothing to show... Select a category above!</div>
+        </>
+      )}
+      {showExtracirriculars && (
+        <>
+          <Divider />
+          <Website />
         </>
       )}
       {showInternships && (
