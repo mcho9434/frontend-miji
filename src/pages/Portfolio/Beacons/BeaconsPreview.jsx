@@ -24,8 +24,7 @@ const BeaconsPreview = () => {
             />
           </div>
           <Divider />
-          <div className="text-lg">Beacons</div>
-          <div>San Francisco</div>
+          <div className="text-3xl">Beacons</div>
         </div>
       </PreviewCard>
       <Dialog

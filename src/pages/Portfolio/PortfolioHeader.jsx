@@ -4,6 +4,7 @@ import { Switch } from "@mui/material";
 
 import useIsMobile from "../../utils/useIsMobile";
 import clsx from "clsx";
+import Divider from "../../components/Divider";
 
 const PortfolioHeader = ({
   showTextView,
@@ -25,10 +26,10 @@ const PortfolioHeader = ({
         during my time as an undergraduate and some cool ways to look and
         filter!
       </div>
-
+      <Divider />
       <div
         className={clsx({
-          "flex w-full gap-2 mb-4 justify-around": !isMobile,
+          "flex w-full gap-2 justify-around": !isMobile,
           "grid grid-cols-2 gap-4": isMobile,
         })}
       >

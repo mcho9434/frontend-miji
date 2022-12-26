@@ -25,7 +25,9 @@ const Setup = ({
     !!playerNames.player2 &&
     !!playerNames.player3 &&
     !!playerNames.player4;
+
   const isMobile = useIsMobile();
+
   return (
     <Card>
       <div className="flex flex-col">
@@ -39,7 +41,14 @@ const Setup = ({
           in time, and remember what was rolled previously. After being
           unsuccessful in find an app to do this, I decided to create Catan
           Buddy! Feel free to pull this up the next time you think someone is
-          taking too long to move...
+          taking too long to move... For other disputes,{" "}
+          <a
+            className="underline"
+            href="https://www.catan.com/sites/default/files/2021-06/catan_base_rules_2020_200707.pdf"
+          >
+            here
+          </a>{" "}
+          are the rules.
         </div>
         <Divider />
         <div
@@ -49,7 +58,7 @@ const Setup = ({
           })}
         >
           <div className="flex items-center">
-            <span className="mr-2">Set Turn Time:</span>
+            <span className="mr-2">Turn Time:</span>
             <TextField
               value={maxTurnTime}
               onChange={(e) => {
@@ -60,8 +69,8 @@ const Setup = ({
               style={{ width: 100 }}
             />
           </div>
-          {/* <div className="flex items-center">
-            <span>Set Place Time:</span>
+          <div className="flex items-center">
+            <span className="mr-2">Set Place Time:</span>
             <TextField
               value={maxPlaceTime}
               onChange={(e) => {
@@ -71,7 +80,7 @@ const Setup = ({
               size="small"
               style={{ width: 100 }}
             />
-          </div> */}
+          </div>
           <div className="flex items-center">
             <span className="mr-2">Player 1 Name:</span>
             <TextField
@@ -131,17 +140,17 @@ const Setup = ({
           onClick={() => {
             console.log(roll());
             if (isReady) {
-              setGameState("inGame");
+              setGameState("Placement");
               setErrorMessage("");
             } else {
               setErrorMessage("Please make sure all fields are filled out!");
             }
           }}
         >
-          Start game
+          Start Placement
         </div>
         {!!errorMessage && (
-          <div className="text-red-900 text-center">{errorMessage}</div>
+          <div className="text-red-900 text-center mt-2">{errorMessage}</div>
         )}
       </div>
     </Card>

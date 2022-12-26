@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Setup from "./Setup";
 import Game from "./Game";
+import Placement from "./Placement";
 const CatanBuddy = () => {
   // game state
   const [gameState, setGameState] = useState("Setup");
@@ -31,6 +32,17 @@ const CatanBuddy = () => {
       />
     );
   }
+  // if (gameState === "Placement") {
+  //   return (
+  //     <Placement
+  //       setGameState={setGameState}
+  //       maxTurnTime={maxTurnTime}
+  //       maxPlaceTime={maxPlaceTime}
+  //       playerNames={playerNames}
+  //       setPlayerNames={setPlayerNames}
+  //     />
+  //   );
+  // }
   return (
     <Game
       setGameState={setGameState}

@@ -24,8 +24,7 @@ const LavalabPreview = () => {
             />
           </div>
           <Divider />
-          <div className="text-lg">Lavalab</div>
-          <div>Los Angeles</div>
+          <div className="text-3xl">Lavalab</div>
         </div>
       </PreviewCard>
       <Dialog

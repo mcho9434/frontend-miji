@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../../components/Card";
-import Divider from "../../components/Divider";
-import useIsMobile from "../../utils/useIsMobile";
+import Card from "../../../components/Card";
+import Divider from "../../../components/Divider";
+import useIsMobile from "../../../utils/useIsMobile";
 import clsx from "clsx";
 const Hobbies = () => {
   const isMobile = useIsMobile();

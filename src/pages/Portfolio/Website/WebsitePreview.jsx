@@ -23,8 +23,7 @@ const WebsitePreview = () => {
             />
           </div>
           <Divider />
-          <div className="text-lg">Personal Website</div>
-          <div>Remote</div>
+          <div className="text-3xl">Personal Website</div>
         </div>
       </PreviewCard>
       <Dialog

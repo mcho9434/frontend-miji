@@ -14,7 +14,7 @@ const Otis = () => {
         </div>
         <span className="text-lg italic">May 2022 - July 2022</span>
       </div>
-      <div>
+      <div className="mt-4">
         &emsp;I worked at{" "}
         <a
           className="underline font-semibold"

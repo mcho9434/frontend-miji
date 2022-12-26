@@ -19,8 +19,7 @@ const OtisPreview = () => {
             <img src="logos/otis.png" alt="beacons logo" className="w-full" />
           </div>
           <Divider />
-          <div className="text-lg">Otis Worldwide Corporation</div>
-          <div>Farmington, Connecticut</div>
+          <div className="text-3xl">Otis</div>
         </div>
       </PreviewCard>
       <Dialog

@@ -22,8 +22,7 @@ const CTCPreview = () => {
             />
           </div>
           <Divider />
-          <div className="text-lg">Code the Change</div>
-          <div>Los Angeles</div>
+          <div className="text-3xl">Code the Change</div>
         </div>
       </PreviewCard>
       <Dialog
