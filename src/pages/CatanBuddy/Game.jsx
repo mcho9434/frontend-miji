@@ -34,6 +34,7 @@ const Game = ({
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
   const [turnNumber, setTurnNumber] = useState(0);
+  const [firstPlayer, setFirstPlayer] = useState(-1);
 
   const [isDiceValid, setIsDiceValid] = useState(true);
   const [diceRollTotal, setDiceRollTotal] = useState(-1);
@@ -75,9 +76,7 @@ const Game = ({
         <div className="w-full text-lg">Catan buddy</div>
         <Divider />
         <div className="flex flex-col items-center">
-          <div className="text-2xl">
-            {players[currentPlayerIndex]}'s turn(Turn {turnNumber})
-          </div>
+          <div className="text-2xl">{players[currentPlayerIndex]}'s turn</div>
           {!isTimeUp ? (
             <div
               className={clsx({
@@ -131,6 +130,10 @@ const Game = ({
 
                   setIsCounting(true);
                   setIsDiceValid(false);
+                  if (turnNumber === 0) {
+                    setTurnNumber(1);
+                    setFirstPlayer(currentPlayerIndex);
+                  }
                   if (!gameStarted) {
                     setGameStarted(true);
                   }
@@ -151,7 +154,7 @@ const Game = ({
                 setIsCounting(false);
                 setTimeRemaining(maxTurnTime);
                 setIsTimeUp(false);
-                if (currentPlayerIndex === 3 && gameStarted) {
+                if (currentPlayerIndex === firstPlayer && gameStarted) {
                   setTurnNumber((prevTurn) => {
                     return prevTurn + 1;
                   });
