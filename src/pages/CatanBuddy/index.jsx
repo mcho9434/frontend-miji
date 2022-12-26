@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Setup from "./Setup";
 import Game from "./Game";
-import Placement from "./Placement";
+
 const CatanBuddy = () => {
   // game state
   const [gameState, setGameState] = useState("Setup");

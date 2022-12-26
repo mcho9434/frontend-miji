@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Card from "../../components/Card";
 import Divider from "../../components/Divider";
 import One from "./Dice/One";
@@ -30,7 +30,7 @@ const Placement = ({
   playerNames,
   setPlayerNames,
 }) => {
-  const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
+  // const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [needRoll, setNeedRoll] = useState(true);
 
   const [diceRoll, setDiceRoll] = useState([
@@ -40,9 +40,9 @@ const Placement = ({
     [-1, -1],
   ]);
 
-  const [isCounting, setIsCounting] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(maxTurnTime);
-  const [isTimeUp, setIsTimeUp] = useState(false);
+  // const [isCounting, setIsCounting] = useState(false);
+  // const [timeRemaining, setTimeRemaining] = useState(maxTurnTime);
+  // const [isTimeUp, setIsTimeUp] = useState(false);
 
   const players = [
     playerNames.player1,
@@ -51,25 +51,25 @@ const Placement = ({
     playerNames.player4,
   ];
 
-  let firstPlayer = -1;
-  if (diceRoll[0][0] !== -1) {
-  }
+  // let firstPlayer = -1;
+  // if (diceRoll[0][0] !== -1) {
+  // }
   const playerArray = [0, 1, 2, 3];
   const isMobile = useIsMobile();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (isCounting) {
-        setTimeRemaining((prevTime) => {
-          return prevTime - 1;
-        });
-        if (timeRemaining <= 0) {
-          setIsTimeUp(true);
-        }
-      }
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [isCounting, timeRemaining]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (isCounting) {
+  //       setTimeRemaining((prevTime) => {
+  //         return prevTime - 1;
+  //       });
+  //       if (timeRemaining <= 0) {
+  //         setIsTimeUp(true);
+  //       }
+  //     }
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, [isCounting, timeRemaining]);
 
   return (
     <Card>
@@ -113,7 +113,7 @@ const Placement = ({
             );
           })}
         </div>
-        {!needRoll && (
+        {/* {!needRoll && (
           <div
             className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
             onClick={() => {
@@ -124,7 +124,7 @@ const Placement = ({
           >
             Next Player
           </div>
-        )}
+        )} */}
         <Divider />
         <div
           className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
