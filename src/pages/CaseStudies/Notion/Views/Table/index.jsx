@@ -3,7 +3,7 @@ import NotionTableHeader from "./NotionTableHeader";
 import NotionTableColumn from "./NotionTableColumn";
 import NotionTableAddField from "./NotionTableAddField";
 import NotionTableAddRow from "./NotionTableAddRow";
-import Divider from "../../../../../components/Divider";
+
 // hover color 37352f
 // element color
 
@@ -39,13 +39,13 @@ const NotionTable = () => {
     });
   };
 
-  const deleteField = (attributeName) => {
-    const newData = data.map((oldRow) => {
-      delete oldRow[attributeName];
-      return oldRow;
-    });
-    setData(newData);
-  };
+  // const deleteField = (attributeName) => {
+  //   const newData = data.map((oldRow) => {
+  //     delete oldRow[attributeName];
+  //     return oldRow;
+  //   });
+  //   setData(newData);
+  // };
 
   const addRow = () => {
     const newRowNumber = data[data.length - 1].row + 1;
