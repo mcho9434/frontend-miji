@@ -6,8 +6,8 @@ import Portfolio from "./pages/Portfolio";
 import NoPage from "./pages/NoPage";
 import React from "react";
 import Navbar from "./components/Navbar";
-// import Hobbies from "./pages/Hobbies";
-
+import CaseStudies from "./pages/CaseStudies";
+import Notion from './pages/CaseStudies/Notion'
 function App() {
   return (
     <div className="font-satoshi">
@@ -17,7 +17,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="catan-buddy" element={<CatanBuddy />} />
-            {/* <Route path="hobbies" element={<Hobbies />} /> */}
+            <Route path="case-studies" element={<CaseStudies />} />
+            <Route path="case-studies/notion" element={<Notion />} />
+
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

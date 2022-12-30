@@ -80,8 +80,6 @@ const Placement = ({
           <div
             className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
             onClick={() => {
-              console.log("here");
-
               let nextArray = diceRoll.map((p, i) => {
                 return [roll(), roll()];
               });

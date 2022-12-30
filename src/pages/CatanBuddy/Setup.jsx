@@ -138,7 +138,6 @@ const Setup = ({
         <div
           className="p-3 text-center hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
           onClick={() => {
-            console.log(roll());
             if (isReady) {
               setGameState("Placement");
               setErrorMessage("");

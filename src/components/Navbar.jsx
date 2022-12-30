@@ -15,8 +15,6 @@ const Navbar = () => {
 
   const location = useLocation().pathname;
 
-  console.log(location === "/");
-
   if (isMobile) {
     return (
       <>
@@ -162,7 +160,7 @@ const Navbar = () => {
                   "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
                   {
                     "underline underline-offset-2 font-semibold ":
-                      location === "/portfolio",
+                      location.includes("/portfolio"),
                   }
                 )}
               >
@@ -174,11 +172,23 @@ const Navbar = () => {
                   "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
                   {
                     "underline underline-offset-2 font-semibold ":
-                      location === "/catan-buddy",
+                      location.includes("/catan-buddy"),
                   }
                 )}
               >
                 Catan Buddy
+              </Link>
+              <Link
+                to="/case-studies"
+                className={clsx(
+                  "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
+                  {
+                    "underline underline-offset-2 font-semibold ":
+                      location.includes("/case-studies"),
+                  }
+                )}
+              >
+                Case Studies
               </Link>
               {/* <Link
                 to="/hobbies"
