@@ -5,9 +5,9 @@ import Divider from "../../components/Divider";
 import clsx from "clsx";
 import useIsMobile from "../../utils/useIsMobile";
 
-const roll = () => {
-  return Math.round(Math.random());
-};
+// const roll = () => {
+//   return Math.round(Math.random());
+// };
 
 const Setup = ({
   setGameState,
