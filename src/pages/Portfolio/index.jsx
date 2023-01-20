@@ -11,8 +11,7 @@ import BeaconsPreview from "./Beacons/BeaconsPreview";
 import CTCPreview from "./CTC/CTCPreview";
 import LavalabPreview from "./Lavalab/LavalabPreview";
 import OtisPreview from "./Otis/OtisPreview";
-import WebsitePreview from "./Website/WebsitePreview";
-import Website from "./Website/Website";
+
 const Portfolio = () => {
   const [showTextView, setShowTextView] = useState(false);
 
@@ -41,7 +40,7 @@ const Portfolio = () => {
             "grid-cols-2": isMobile,
           })}
         >
-          {showExtracirriculars && <WebsitePreview />}
+          {/* {showExtracirriculars && <WebsitePreview />} */}
           {showInternships && <BeaconsPreview />}
           {showInternships && <OtisPreview />}
           {showExtracirriculars && <LavalabPreview />}
@@ -68,12 +67,12 @@ const Portfolio = () => {
           <div>Nothing to show... Select a category above!</div>
         </>
       )}
-      {showExtracirriculars && (
+      {/* {showExtracirriculars && (
         <>
           <Divider />
           <Website />
         </>
-      )}
+      )} */}
       {showInternships && (
         <>
           <Divider />
