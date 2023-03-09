@@ -8,6 +8,17 @@ const NotionTableColumn = ({ field, data }) => {
         {field.title}
       </div>
       {data.map((datum, index) => {
+        if(typeof datum == "boolean"){
+          return (
+            <div
+              key={index}
+              className="border-r border-t border-gray-200 text-[14px] px-2 pt-[5px] pb-1.5 font-medium h-[36px] flex items-center"
+            >
+              <input type="checkbox" checked={datum}/>
+            </div>
+          );
+        }
+
         return (
           <div
             key={index}

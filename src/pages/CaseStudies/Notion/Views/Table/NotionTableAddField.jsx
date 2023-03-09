@@ -11,7 +11,7 @@ const NotionTableAddField = ({ length, addField }) => {
         <div
           className="px-3 py-1.5 text-[#37352f] opacity-[0.65] hover:bg-gray-200 h-[36px]"
           onClick={() => {
-            addField("apple", "twnety");
+            addField("NewTitle", "NewDefault");
           }}
         >
           +

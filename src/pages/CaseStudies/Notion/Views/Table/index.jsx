@@ -12,14 +12,15 @@ const NotionTable = () => {
 
   const [title, setTitle] = useState("Untitled");
   const [data, setData] = useState([
-    { row: 0, Name: "matthew", Age: 2 },
-    { row: 1, Name: "sam", Age: 3 },
-    { row: 2, Name: "jo", Age: 6 },
-    { row: 3, Name: "bob", Age: 52 },
+    { row: 0, Name: "matthew", Age: 2, Status: true },
+    { row: 1, Name: "sam", Age: 3, Status: true },
+    { row: 2, Name: "jo", Age: 6, Status: true },
+    { row: 3, Name: "bob", Age: 52, Status: true },
   ]);
   const [fields, setFields] = useState([
     { index: 0, title: "Name", defaultValue: "" },
     { index: 1, title: "Age", defaultValue: 0 },
+    { index: 2, title: "Status", defaultValue: false },
   ]);
 
   const addField = (attributeName, defaultValue) => {
@@ -91,22 +92,6 @@ const NotionTable = () => {
       </div>
       <NotionTableAddRow addRow={addRow} />
 
-      {/* <NotionTableFields
-        fields={fields}
-        setFields={setFields}
-        addField={addField}
-        deleteField={deleteField}
-      />
-      {data.map((row, index) => {
-        return (
-          <NotionTableRows
-            key={index}
-            datum={row}
-            fields={fields}
-            isFirst={row.row === 0}
-          />
-        );
-      })} */}
     </div>
   );
 };
