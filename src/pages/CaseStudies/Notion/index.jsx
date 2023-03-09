@@ -9,7 +9,7 @@ const Notion = () => {
       <div className="text-2xl">Notion Views</div>
       <Divider />
       <div>
-        <div>Table View (desktop only)</div>
+        <div>"Static" Table View (desktop only, can add columns and rows)</div>
         <div className="w-1/2 mb-4">
           <Divider />
         </div>
