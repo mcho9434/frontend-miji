@@ -206,7 +206,7 @@ const Game = ({
           </div>
           <div className="mt-2 text-lg">
             Previous rolls:{" "}
-            {diceHistory.slice(Math.max(diceHistory.length - 10, 0)).join(", ")}
+            {diceHistory.slice(Math.max(diceHistory.length - 10, 0)).reverse().join(", ")}
           </div>
           <div className="w-full">
             <Bar
