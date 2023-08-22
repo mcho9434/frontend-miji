@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import CTC from "./CTC/CTC";
 import Lavalab from "./Lavalab/Lavalab";
 import Beacons from "./Beacons/Beacons";
+import Beacons2 from "./Beacons2/Beacons2";
 import Otis from "./Otis/Otis";
 import Divider from "../../components/Divider";
 import useIsMobile from "../../utils/useIsMobile";
 import PortfolioHeader from "./PortfolioHeader";
 import clsx from "clsx";
 import BeaconsPreview from "./Beacons/BeaconsPreview";
+import BeaconsPreview2 from "./Beacons2/BeaconsPreview2";
 import CTCPreview from "./CTC/CTCPreview";
 import LavalabPreview from "./Lavalab/LavalabPreview";
 import OtisPreview from "./Otis/OtisPreview";
 
 const Portfolio = () => {
-  const [showTextView, setShowTextView] = useState(false);
+  const [showTextView, setShowTextView] = useState(true);
 
   const [showInternships, setShowInternships] = useState(true);
   const [showExtracirriculars, setShowExtracirriculars] = useState(true);
@@ -41,6 +43,7 @@ const Portfolio = () => {
           })}
         >
           {/* {showExtracirriculars && <WebsitePreview />} */}
+          {showInternships && <BeaconsPreview2 />}
           {showInternships && <BeaconsPreview />}
           {showInternships && <OtisPreview />}
           {showExtracirriculars && <LavalabPreview />}
@@ -73,6 +76,12 @@ const Portfolio = () => {
           <Website />
         </>
       )} */}
+      {showInternships && (
+        <>
+          <Divider />
+          <Beacons2 />
+        </>
+      )}
       {showInternships && (
         <>
           <Divider />

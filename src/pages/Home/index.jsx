@@ -5,8 +5,7 @@ const Home = () => {
     <Card>
       <div className="m-4">
         <div>
-          &emsp;Hi I'm Matthew. Here is my website. Feel free to look around. As
-          you can tell I am an engineer and not a designer. :)
+          &emsp;Hi I'm Matthew. Here is my website. Feel free to look around.
         </div>
         <div className="mt-3">
           &emsp;Beyond a couple MUI components, every part of this website was

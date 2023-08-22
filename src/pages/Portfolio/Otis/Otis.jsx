@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import useIsMobile from "../../../utils/useIsMobile";
 
 const Otis = () => {
@@ -14,48 +15,44 @@ const Otis = () => {
         </div>
         <span className="text-lg italic">May 2022 - July 2022</span>
       </div>
-      <div className="mt-4">
-        &emsp;I worked at{" "}
-        <a
-          className="underline font-semibold"
-          href="https://www.otis.com/en/us/"
-        >
-          Otis
-        </a>{" "}
-        as a software engineering intern in the summer before my junior year.
-        Otis is a large corporation focused on manufacturing elevators and
-        escalators on an international scale, founded in 1852. I worked on the
-        Compass360 team, writing code for destination entry terminals like the
-        one below:
+      <div
+        className={clsx("mt-4", {
+          "flex gap-x-2": !isMobile,
+          "flex flex-col gap-y-2": isMobile,
+        })}
+      >
+        <div>
+          <div>
+            &emsp;During my junior year's summer, I interned at Otis, a
+            longstanding global company manufacturing elevators and escalators
+            since 1852. Working with the Compass360 team, I focused on the
+            software of destination entry terminals. These terminals faced
+            deprecation issues due to their original code being written in JDK6.
+            The security risks emerging from 2018 prompted me to address this
+            challenge. Attempting to transpile the outdated code to a newer Java
+            version presented obstacles, given the removal of core features in
+            subsequent versions.
+          </div>
+          <div>
+            &emsp;Recognizing the limitations, I proposed a React rewrite, even
+            preparing an external presentation to introduce the idea to
+            unfamiliar stakeholders. This initiative was approved, leading to
+            substantial code portions being rewritten and payload size reduced
+            by almost 90%. This experience of coding for hardware rather than
+            pure software proved highly engaging and different from my usual
+            projects.
+          </div>
+        </div>
         <img
           className="m-auto aspect-square	w-96"
           src="det.jpg"
           alt="compass360 DET"
         />
-        &emsp;As an intern, I was tasked with dealing with deprecation issues of
-        the software behind the terminal. The code had originally been written
-        in JDK6(released 2006), but faced serious security risks starting in
-        2018. After trying to transpile the outdated codebase into a newer
-        version of Java, I saw several roadblocks to a clean migration to a
-        newer Java; many of the core features in the original code had been
-        removed in newer versions, precluding a direct solution. Additionally,
-        even if a translation was produced, it would be difficult to verify
-        everything had carried over properly.
-        <div>
-          &emsp;As such, I took the initative to propose a React rewrite.
-          Although key stakeholders were unknowing of React, I even took the
-          time outside work to develop a short presentation to pitch this idea.
-          Overall, the proposal was approved and I was successful in rewriting
-          significant portions of the code, reducing paylod size by nearly 90%.
-          I found it incredibly interesting to be coding for a uniquely hardware
-          product, rather than the conventional pure software solutions I was
-          used to.
-        </div>
       </div>
       <div className="mt-2">
         <span className="font-semibold">Skills used: </span>
         <span>
-          React, PHP, Java(JDK6, JDK17, JDK21, applets), embedded software
+          React, PHP, Java(JDK6, JDK17, JDK21, applets), Embedded Software
         </span>
       </div>
     </div>
