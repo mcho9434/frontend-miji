@@ -6,8 +6,8 @@ const CaseStudies = () => {
   return (
     <Card>
       <div>
-        Case Studies! Just a fun little side project, but I've tried to, from
-        scratch, recreate signature components of popular products.
+        Case Studies! Just a fun little side projects or, from-scratch
+        recreations of popular products.
       </div>
       <Divider />
       <StudiesNavbar />

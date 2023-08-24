@@ -56,12 +56,12 @@ const Navbar = () => {
                   >
                     Portfolio
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/catan-buddy"
                     className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
                   >
                     Catan Buddy
-                  </Link>
+                  </Link> */}
                   {/* <Link
                     to="/hobbies"
                     className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
@@ -166,18 +166,7 @@ const Navbar = () => {
               >
                 Portfolio
               </Link>
-              <Link
-                to="/catan-buddy"
-                className={clsx(
-                  "hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg",
-                  {
-                    "underline underline-offset-2 font-semibold ":
-                      location.includes("/catan-buddy"),
-                  }
-                )}
-              >
-                Catan Buddy
-              </Link>
+
               <Link
                 to="/case-studies"
                 className={clsx(

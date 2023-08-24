@@ -23,7 +23,7 @@ const PortfolioHeader = ({
     <Card>
       <div className="mb-2">
         This is the portfolio page! Here's a list of the major stuff I've done
-        during my time as an undergraduate and some cool ways to look and
+        during my time as an undergraduate and some ways to look and
         filter!
       </div>
       <Divider />
