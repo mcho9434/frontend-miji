@@ -4,6 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import useIsMobile from "../utils/useIsMobile";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import clsx from "clsx";
@@ -114,6 +115,13 @@ const Navbar = () => {
         <nav>
           <div className="flex w-full justify-between items-center py-2 border-b border-black">
             <div className="flex ml-4 gap-4">
+              <a
+                className="p-3 hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
+                href="Matthew_Cho_Resume.pdf"
+                target="_blank"
+              >
+                <ContactPageIcon className="!w-8 !h-8 " />
+              </a>
               <div
                 className="p-3 hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"
                 onClick={() => (window.location = "mailto:mjycho@gmail.com")}
