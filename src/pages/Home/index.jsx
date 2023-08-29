@@ -16,6 +16,11 @@ const Home = () => {
             MUI components, every part of this website was written from
             scratch(even the dice in Catan Buddy are made with flexbox :D).
           </div>
+          <div className="mt-2 hover:font-bold">
+            <a href="Matthew_Cho_Resume.pdf" target="_blank">
+              Click here for a resume.
+            </a>
+          </div>
         </div>
         <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
       </div>

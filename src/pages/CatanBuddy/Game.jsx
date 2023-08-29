@@ -54,6 +54,8 @@ const Game = ({
     playerNames.player2,
     playerNames.player3,
     playerNames.player4,
+    playerNames.player5,
+    playerNames.player6,
   ];
 
   useEffect(() => {

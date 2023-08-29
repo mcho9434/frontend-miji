@@ -24,7 +24,9 @@ const Setup = ({
     !!playerNames.player1 &&
     !!playerNames.player2 &&
     !!playerNames.player3 &&
-    !!playerNames.player4;
+    !!playerNames.player4 &&
+    !!playerNames.player5 &&
+    !!playerNames.player6;
 
   const isMobile = useIsMobile();
 
@@ -122,6 +124,32 @@ const Setup = ({
           </div>
           <div className="flex items-center">
             <span className="mr-2">Player 4 Name:</span>
+            <TextField
+              value={playerNames.player4}
+              onChange={(e) => {
+                setPlayerNames((previousNames) => {
+                  return { ...previousNames, player4: e.target.value };
+                });
+              }}
+              size="small"
+              style={{ width: 100 }}
+            />
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">Player 5 Name:</span>
+            <TextField
+              value={playerNames.player4}
+              onChange={(e) => {
+                setPlayerNames((previousNames) => {
+                  return { ...previousNames, player4: e.target.value };
+                });
+              }}
+              size="small"
+              style={{ width: 100 }}
+            />
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">Player 6 Name:</span>
             <TextField
               value={playerNames.player4}
               onChange={(e) => {
