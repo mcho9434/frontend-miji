@@ -7,9 +7,10 @@ const ResumeLanding = () => {
       <div className="flex m-4 gap-2">
         <div className="mt-3">
           <div>
-            &emsp;Hi I'm Matthew. I'm currently a senior at the University of
-            Southern California studying computer science and entrepreneurship.
-            In my free time, I'm a keyboard and pen enthusiast.
+            &emsp;Hi I'm Matthew. You're coming from my resume! I'm currently a
+            senior at the University of Southern California studying computer
+            science and entrepreneurship. In my free time, I'm a keyboard and
+            pen enthusiast.
           </div>
           <div className="mt-2">
             &emsp;Here is my website! Feel free to look around. Beyond a couple
