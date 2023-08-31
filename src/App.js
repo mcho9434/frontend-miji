@@ -7,7 +7,9 @@ import NoPage from "./pages/NoPage";
 import React from "react";
 import Navbar from "./components/Navbar";
 import CaseStudies from "./pages/CaseStudies";
-import Notion from './pages/CaseStudies/Notion'
+import Notion from "./pages/CaseStudies/Notion";
+import ResumeLanding from "./pages/ResumeLanding";
+
 function App() {
   return (
     <div className="font-satoshi">
@@ -19,7 +21,7 @@ function App() {
             <Route path="catan-buddy" element={<CatanBuddy />} />
             <Route path="case-studies" element={<CaseStudies />} />
             <Route path="case-studies/notion" element={<Notion />} />
-
+            <Route path="r" element={<ResumeLanding />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
