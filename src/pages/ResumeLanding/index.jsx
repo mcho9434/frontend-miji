@@ -7,7 +7,7 @@ const ResumeLanding = () => {
       <div className="flex m-4 gap-2">
         <div className="mt-3">
           <div className="mt-2 text-lg font-semibold">
-            &emsp;I'm Matthew. If you're on this page(rather than{" "}
+            &emsp;If you're on this page(rather than{" "}
             <a href="/" className="underline">
               this one
             </a>
@@ -26,7 +26,7 @@ const ResumeLanding = () => {
             on my resume and in the portfolio section of this website, but I
             want to spend these ~50 seconds emphasizing my{" "}
             <span className="font-bold">
-              communication, ownership, and soft skills.
+              drive, communication, and ownership.
             </span>
           </div>
           <div className="mt-2">
@@ -35,21 +35,20 @@ const ResumeLanding = () => {
             I've learned through experience how to communicate my ideas clearly,
             but also to take ownership of my work when things go wrong. If I am
             responsible for a page or feature, I'm the first one to address
-            potential issues and cover vulnerabilites. While I consider myself a
-            great coder, I truly believe I'm an oustanding team member for my
-            ability to express myself clearly and fully take on
-            responsibilities.
+            potential issues and cover vulnerabilites. Furthermore, I'm the
+            engineer who has the drive to spend the extra time making things to
+            a high standard. While I consider myself a great coder, I truly
+            believe I'm an oustanding team member for my ability to express
+            myself clearly and fully take on responsibilities.
           </div>
           <div className="mt-2">
-            &emsp;I know these are just my words, so I've even collected{" "}
-            <a
-              className="underline"
-              href="https://www.linkedin.com/in/matthew-cho-usc/#recommendations"
-            >
+            &emsp;I know these are just my beliefs, so I've even collected{" "}
+            <a className="underline" href="kelvin.png" target="_blank">
               testimonials
             </a>{" "}
-            from my previous managers who have observed the same. Please reach
-            out, I would love to chat about future opportunities.
+            on Linkedin from my previous managers who have observed these
+            qualities. Please reach out, I would love to chat about future
+            opportunities.
           </div>
         </div>
         <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
