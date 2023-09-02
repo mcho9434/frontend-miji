@@ -57,18 +57,6 @@ const Navbar = () => {
                   >
                     Portfolio
                   </Link>
-                  {/* <Link
-                    to="/catan-buddy"
-                    className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
-                  >
-                    Catan Buddy
-                  </Link> */}
-                  {/* <Link
-                    to="/hobbies"
-                    className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg"
-                  >
-                    Hobbies
-                  </Link> */}
                 </div>
                 <div>
                   <div className="flex gap-2">
@@ -113,7 +101,7 @@ const Navbar = () => {
     <>
       <div>
         <nav>
-          <div className="flex w-full justify-between items-center py-2 border-b border-black">
+          <div className="flex w-full justify-around items-center py-2 border-b border-black">
             <div className="flex ml-4 gap-4">
               <a
                 className="p-3 hover:bg-slate-200 shadow-md border border-black rounded-lg cursor-pointer"

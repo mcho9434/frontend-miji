@@ -9,7 +9,7 @@ const Card = ({ children }) => {
     <div className={clsx("w-full flex justify-center")}>
       <div
         className={clsx("m-4", {
-          "!w-[800px]": !isMobile,
+          "!w-[1000px]": !isMobile,
         })}
       >
         {children}
