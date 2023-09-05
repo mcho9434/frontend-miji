@@ -21,10 +21,10 @@ const ResumeLanding = () => {
             >
               Studies
             </a>{" "}
-            have found that the average user spends a little less than a minute
-            before leaving a website. You can read all about the work I've done
-            on my resume and in the portfolio section of this website, but I
-            want to spend these ~50 seconds emphasizing my{" "}
+            have found that the average user spends less than a minute before
+            leaving a website. You can read all about the work I've done on my
+            resume and in the portfolio section of this website, but I want to
+            spend your valuable seconds emphasizing my{" "}
             <span className="font-bold">
               drive, communication, and ownership.
             </span>
@@ -42,13 +42,21 @@ const ResumeLanding = () => {
             myself clearly and fully take on responsibilities.
           </div>
           <div className="mt-2">
-            &emsp;I know these are just my beliefs, so I've even collected{" "}
+            &emsp;I know this is just my perspective, so I've even collected{" "}
             <a className="underline" href="kelvin.png" target="_blank">
               testimonials
             </a>{" "}
-            on Linkedin from my previous managers who have observed these
-            qualities. Please reach out, I would love to chat about future
-            opportunities.
+            on{" "}
+            <a
+              className="underline"
+              href="https://www.linkedin.com/in/matthew-cho-usc/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Linkedin
+            </a>{" "}
+            from my previous managers who have observed these qualities. Please
+            reach out, I would love to chat about future opportunities.
           </div>
         </div>
         <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
