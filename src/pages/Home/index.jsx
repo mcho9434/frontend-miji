@@ -1,10 +1,14 @@
 import React from "react";
+import clsx from "clsx";
 import Card from "../../components/Card";
+import useIsMobile from "../../utils/useIsMobile";
 
 const Home = () => {
+  const isMobile = useIsMobile();
   return (
     <Card>
-      <div className="flex m-4 gap-2">
+      <div className={clsx("flex m-4 gap-2", {"flex-col": isMobile})}>
+        <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
         <div className="mt-3">
           <div>
             &emsp;Hi I'm Matthew. I'm currently a senior at the University of
@@ -22,7 +26,6 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
       </div>
     </Card>
   );

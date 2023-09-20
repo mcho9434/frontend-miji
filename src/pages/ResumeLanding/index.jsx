@@ -1,10 +1,19 @@
 import React from "react";
+import clsx from "clsx";
+
 import Card from "../../components/Card";
+import useIsMobile from "../../utils/useIsMobile";
 
 const ResumeLanding = () => {
+  const isMobile = useIsMobile();
+
   return (
     <Card>
-      <div className="flex m-4 gap-2">
+      <div className={clsx("flex m-4 gap-2", { "flex-col": isMobile })}>
+        {isMobile && (
+          <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
+        )}
+
         <div className="mt-3">
           <div className="mt-2 text-lg font-semibold">
             &emsp;If you're on this page(rather than{" "}
@@ -59,7 +68,9 @@ const ResumeLanding = () => {
             reach out, I would love to chat about future opportunities.
           </div>
         </div>
-        <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
+        {!isMobile && (
+          <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
+        )}
       </div>
     </Card>
   );
