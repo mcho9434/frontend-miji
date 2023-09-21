@@ -52,7 +52,7 @@ const ResumeLanding = () => {
           </div>
           <div className="mt-2">
             &emsp;I know this is just my perspective, so I've even collected{" "}
-            <a className="underline" href="kelvin.png" target="_blank">
+            <a className="underline" href="recs.png" target="_blank">
               testimonials
             </a>{" "}
             on{" "}
