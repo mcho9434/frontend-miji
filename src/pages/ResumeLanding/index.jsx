@@ -41,7 +41,7 @@ const ResumeLanding = () => {
             that. But more importantly I gained a ​​commitment to effective
             communication and learned to take ownership for my work. Beyond
             coding knowledge, this combination has allowed me to consistently
-            ship quality products, improve my work when applicable, and be an
+            ship quality products, improve my past work when applicable, and be an
             trusted, effective member of my team.
           </div>
           <div className="mt-2 text-xl">

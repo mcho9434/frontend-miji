@@ -19,7 +19,7 @@ const PortfolioRow = ({
         "animate-title-slide-right-default": !imageFirst && !isMobile,
       })}
     >
-      <div className="flex w-full justify-between">
+      <div className={clsx("w-full", { "flex justify-between": !isMobile })}>
         <div>
           <span className="text-3xl font-semibold mr-4">{title}</span>
           {!isMobile && (
@@ -36,7 +36,7 @@ const PortfolioRow = ({
       >
         {((imageFirst && !isMobile) || isMobile) && (
           <img
-            className="w-80 aspect-square object-cover object-center rounded-lg"
+            className="w-80 aspect-square object-cover object-center rounded-lg m-auto"
             src={src}
             alt={alt}
           />
@@ -44,7 +44,7 @@ const PortfolioRow = ({
         <div className="text-xl">&emsp;{body}</div>
         {!((imageFirst && !isMobile) || isMobile) && (
           <img
-            className="w-80 aspect-square object-cover object-center rounded-lg"
+            className="w-80 aspect-square object-cover object-center rounded-lg m-auto"
             src={src}
             alt={alt}
           />
