@@ -15,8 +15,8 @@ const PortfolioRow = ({
   return (
     <div
       className={clsx({
-        "animate-title-slide-left-default": imageFirst,
-        "animate-title-slide-right-default": !imageFirst,
+        "animate-title-slide-left-default": imageFirst && !isMobile,
+        "animate-title-slide-right-default": !imageFirst && !isMobile,
       })}
     >
       <div className="flex w-full justify-between">
