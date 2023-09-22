@@ -42,5 +42,12 @@ const COOL_ITEMS = [
     image: "CoolStuff/kiss.png",
     alt: "kiss",
   },
+  {
+    name: "La Colombe",
+    description: "A coffee roasting company in PA with great canned lattes",
+    link: "https://www.lacolombe.com/",
+    image: "CoolStuff/la_colombe.png",
+    alt: "la colombe logo",
+  },
 ];
 export default COOL_ITEMS;
