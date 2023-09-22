@@ -5,12 +5,12 @@ const StudiesNavbar = () => {
   return (
     <div className="flex gap-2 mt-4">
       <Link to="/case-studies/notion">
-        <div className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg">
-          Notion
+        <div className="transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg">
+          Notion Collections/Database
         </div>
       </Link>
       <Link to="/catan-buddy">
-        <div className="hover:bg-slate-200 shadow-md p-3 border border-black rounded-lg">
+        <div className="transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg">
           Catan Buddy
         </div>
       </Link>

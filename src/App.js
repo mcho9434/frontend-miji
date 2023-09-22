@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import CaseStudies from "./pages/CaseStudies";
 import Notion from "./pages/CaseStudies/Notion";
 import ResumeLanding from "./pages/ResumeLanding";
+import CoolStuff from "./pages/CoolStuff";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="case-studies" element={<CaseStudies />} />
             <Route path="case-studies/notion" element={<Notion />} />
             <Route path="r" element={<ResumeLanding />} />
+            <Route path="cool-stuff" element={<CoolStuff />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

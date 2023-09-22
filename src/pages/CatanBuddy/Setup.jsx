@@ -72,18 +72,6 @@ const Setup = ({
             />
           </div>
           <div className="flex items-center">
-            <span className="mr-2">Set Place Time:</span>
-            <TextField
-              value={maxPlaceTime}
-              onChange={(e) => {
-                setMaxPlaceTime(e.target.value);
-              }}
-              type="number"
-              size="small"
-              style={{ width: 100 }}
-            />
-          </div>
-          <div className="flex items-center">
             <span className="mr-2">Player 1 Name:</span>
             <TextField
               value={playerNames.player1}
@@ -138,10 +126,10 @@ const Setup = ({
           <div className="flex items-center">
             <span className="mr-2">Player 5 Name:</span>
             <TextField
-              value={playerNames.player4}
+              value={playerNames.player5}
               onChange={(e) => {
                 setPlayerNames((previousNames) => {
-                  return { ...previousNames, player4: e.target.value };
+                  return { ...previousNames, player5: e.target.value };
                 });
               }}
               size="small"
@@ -151,10 +139,10 @@ const Setup = ({
           <div className="flex items-center">
             <span className="mr-2">Player 6 Name:</span>
             <TextField
-              value={playerNames.player4}
+              value={playerNames.player6}
               onChange={(e) => {
                 setPlayerNames((previousNames) => {
-                  return { ...previousNames, player4: e.target.value };
+                  return { ...previousNames, player6: e.target.value };
                 });
               }}
               size="small"

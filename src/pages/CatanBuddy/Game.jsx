@@ -162,7 +162,7 @@ const Game = ({
                   });
                 }
                 setCurrentPlayerIndex((prevIndex) => {
-                  if (prevIndex === 3) {
+                  if (prevIndex === 5) {
                     return 0;
                   } else {
                     return prevIndex + 1;
@@ -208,7 +208,10 @@ const Game = ({
           </div>
           <div className="mt-2 text-lg">
             Previous rolls:{" "}
-            {diceHistory.slice(Math.max(diceHistory.length - 10, 0)).reverse().join(", ")}
+            {diceHistory
+              .slice(Math.max(diceHistory.length - 10, 0))
+              .reverse()
+              .join(", ")}
           </div>
           <div className="w-full">
             <Bar

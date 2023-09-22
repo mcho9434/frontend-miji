@@ -1,5 +1,6 @@
 import React from "react";
 import useIsMobile from "../../../utils/useIsMobile";
+import clsx from "clsx";
 const Lavalab = () => {
   const isMobile = useIsMobile();
   return (
@@ -11,29 +12,30 @@ const Lavalab = () => {
             <span className="!justify-self-end">Los Angeles, California</span>
           )}
         </div>
-        <span className="text-lg italic">January 2022 - Present</span>
+        <span className="text-lg italic">Janruary 2022 - Present</span>
       </div>
-      <div className="mt-4">
-        <div>
-          &emsp;Lavalab is a entrepreneurial, product development student
-          origanization that aims to get students from ideation to prototyping
-          the span of a semseter. Teams of product managers, designers, and
-          developers are paired up and go through the complete pipeline
-          together.
+      <div
+        className={clsx("mt-4 flex", {
+          "gap-x-2": !isMobile,
+          "flex-col gap-y-2": isMobile,
+        })}
+      >
+        <div className="">
+          &emsp;Lavalab is a student-run entrepreneurial incubator program that
+          runs over the course of a semester from ideation to demo-day. My team
+          and I pitched Cora, an emotionally intelligent toy for children to
+          help regulate emotions. It was great to wear so many hats in a short
+          time from developer to pitch-deck maker. At the end of the semester my
+          team and I pitched to a panel of venture capitalists and
+          entrepreneurs. Here’s some pictures of Cora(nervous) who was a
+          combination of a dollar-store stuffed animal and an Arduino Uno!
         </div>
-        <div>
-          &emsp;I was a developer on my team, and we built an initial prototype
-          for Cora, an emotionally intelligent toy for children to help regulate
-          emotions. It was a great time to have hands on experience with many
-          different spheres that I hadn't been able to before. I'd help write
-          elevator pitches and think about marketing sizing on the product size,
-          while going to makerspaces to solder and writing code for the toy as
-          well. At the end of the semseter, Lavalab holds "Demo Day" in which
-          all the teams get to present their idea and prototype.
-        </div>
-        <div className="mt-2">
-          <span className="font-semibold">Skills used: </span>
-          <span>Python, Arduino Uno, Product Analysis</span>
+        <div className="flex-0">
+          <img
+            className="aspect-square h-full w-full object-cover object-center"
+            src="lavalab1.JPG"
+            alt="cora"
+          />
         </div>
       </div>
     </div>

@@ -6,6 +6,34 @@ module.exports = {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
       },
+      keyframes: {
+        "title-slide-down": {
+          "0%": { transform: "translateY(-1000px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "title-slide-up": {
+          "0%": { transform: "translateY(1000px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "title-slide-right": {
+          "0%": { transform: "translateX(1000px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "title-slide-left": {
+          "0%": { transform: "translateX(-1000px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "title-slide-down-default": "title-slide-down 0.8s ease-out",
+        "title-slide-up-default": "title-slide-up 0.8s ease-out",
+        "title-slide-right-default": "title-slide-right 0.8s ease-out",
+        "title-slide-left-default": "title-slide-left 0.8s ease-out",
+        "title-slide-down": "title-slide-down",
+        "title-slide-up": "title-slide-up",
+        "title-slide-right": "title-slide-right",
+        "title-slide-left": "title-slide-left",
+      },
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

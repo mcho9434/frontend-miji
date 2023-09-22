@@ -16,50 +16,28 @@ const CTC = () => {
         <span className="text-lg italic">August 2020 - Present</span>
       </div>
       <div
-        className={clsx("mt-4", {
-          "flex gap-x-2": !isMobile,
-          "flex flex-col gap-y-2": isMobile,
+        className={clsx("mt-4 flex", {
+          "gap-x-2": !isMobile,
+          "flex-col gap-y-2": isMobile,
         })}
       >
-        <div>
-          <div>
-            &emsp;Code the Change is a student organization within Viterbi
-            School of Engineering, aiming to offer pro-bono software solutions
-            to Los Angeles-based non-profits. The group operates akin to a
-            conventional product development team, involving students in roles
-            like product managers, technical leads, designers, and developers.
-          </div>
-          <div>
-            &emsp;Beginning as a freshman, I engaged in roles ranging from
-            developer to technical lead and executive board member. During my
-            first year, I collaborated with Humans Against Trafficking to create
-            predictive models assessing social media account vulnerabilities to
-            human trafficking. By analyzing manually labeled Instagram bios, our
-            model achieved 54% accuracy across 6 categories.
-          </div>
-          <div>
-            &emsp;In the subsequent year, I contributed to the Ron Finley
-            Project by designing a CRM-style solution for handling inquiries and
-            managing seasonal volunteers. As a technical lead, I gained valuable
-            insights into product-oriented thinking, spending more time on
-            communication and task management.
-          </div>
-          <div>
-            &emsp;In my third year, I served as Head of Product, overseeing
-            client selection and handover to product teams. I also continued to
-            serve as a developer and mentor to other project teams in the
-            organization.
-          </div>
+        <div className="items-center">
+          &emsp;Code the Change is a group of self-driven students engaged in
+          the pro-bono development of products for LA-based nonprofits. I’ve
+          been a member since I was a freshman and have taken on a plethora of
+          roles, everything from entry-level developer to tech lead to head of
+          product. I’ve worked with everything from non-profits focused on urban
+          gardening to preventing human trafficking. It’s been awesome to work
+          with like minded peers and local non-profits. Here’s a picture of my
+          team and I in an urban garden in Los Angeles!
         </div>
-        <img
-          className="w-60 aspect-[9/16] m-auto"
-          src="CTC.jpg"
-          alt="CTC RFP"
-        />
-      </div>
-      <div className="mt-2">
-        <span className="font-semibold">Skills used: </span>
-        <span>React, TailwindCSS, PostgreSQL, TensorFlow, word2vec</span>
+        <div className="flex-0">
+          <img
+            className="aspect-square h-full w-full object-cover object-center"
+            src="CTC.jpg"
+            alt="CTC RFP"
+          />
+        </div>
       </div>
     </div>
   );

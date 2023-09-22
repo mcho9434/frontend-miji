@@ -7,23 +7,19 @@ const Home = () => {
   const isMobile = useIsMobile();
   return (
     <Card>
-      <div className={clsx("flex m-4 gap-2", {"flex-col": isMobile})}>
-        <img className="w-1/2 m-auto" src="matt.jpg" alt="CTC RFP" />
+      <div className={clsx("flex m-4 gap-2", { "flex-col": isMobile })}>
         <div className="mt-3">
-          <div>
-            &emsp;Hi I'm Matthew. I'm currently a senior at the University of
-            Southern California studying computer science and entrepreneurship.
-            In my free time, I'm a keyboard and pen enthusiast.
+          <div className="animate-title-slide-down-default flex">
+            <div className=" text-4xl">Hi, I'm Matthew!</div>
           </div>
-          <div className="mt-2">
-            &emsp;Here is my website! Feel free to look around. Beyond a couple
-            MUI components, every part of this website was written from
-            scratch(even the dice in Catan Buddy are made with flexbox :D).
-          </div>
-          <div className="mt-2 hover:font-bold">
-            <a href="Matthew_Cho_Resume.pdf" target="_blank">
-              Click here for a resume.
-            </a>
+          <div className="mt-4 animate-title-slide-up-default text-lg">
+            <div className="">
+              &emsp; I'm currently a senior at the University of Southern
+              California studying computer science and entrepreneurship. Every
+              part of this website is made from scratch using React and
+              TailwindCSS(Google Analytics WIP)! I use this site to host my
+              previous work but also fun side projects or ideas. Take a look!
+            </div>
           </div>
         </div>
       </div>

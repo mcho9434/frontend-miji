@@ -22,32 +22,23 @@ const Otis = () => {
         })}
       >
         <div>
-          <div>
-            &emsp;During my junior year's summer, I interned at Otis, a
-            longstanding global company manufacturing elevators and escalators
-            since 1852. Working with the Compass360 team, I focused on the
-            software of destination entry terminals. These terminals faced
-            deprecation issues due to their original code being written in JDK6.
-            The security risks emerging from 2018 prompted me to address this
-            challenge. Attempting to transpile the outdated code to a newer Java
-            version presented obstacles, given the removal of core features in
-            subsequent versions.
-          </div>
-          <div>
-            &emsp;Recognizing the limitations, I proposed a React rewrite, even
-            preparing an external presentation to introduce the idea to
-            unfamiliar stakeholders. This initiative was approved, leading to
-            substantial code portions being rewritten and payload size reduced
-            by almost 90%. This experience of coding for hardware rather than
-            pure software proved highly engaging and different from my usual
-            projects.
-          </div>
+          &emsp;During my junior year's summer, I interned at Otis, a
+          longstanding global company manufacturing elevators and escalators
+          since 1852. Working with the Compass360 team, I focused on the
+          software of destination entry terminals. These terminals faced
+          deprecation issues due to their original code being written in JDK6.
+          The security risks emerging from 2018 prompted me to address this
+          challenge. Attempting to transpile the outdated code to a newer Java
+          version presented obstacles, given the removal of core features in
+          subsequent versions.
         </div>
-        <img
-          className="m-auto aspect-square	w-96"
-          src="det.jpg"
-          alt="compass360 DET"
-        />
+        <div className="flex-0">
+          <img
+            className="aspect-square h-full w-full object-cover object-center"
+            src="det.jpg"
+            alt="compass360 det"
+          />
+        </div>
       </div>
       <div className="mt-2">
         <span className="font-semibold">Skills used: </span>

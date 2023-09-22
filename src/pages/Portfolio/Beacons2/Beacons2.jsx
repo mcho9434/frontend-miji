@@ -31,13 +31,6 @@ const Beacons2 = () => {
           notification system for the app and even contributed several new
           components to the Storybook library.
         </div>
-        <div className="mt-2">
-          <span className="font-semibold">Skills used: </span>
-          <span>
-            React, Typescript, TailwindCSS, PostgreSQL, Firebase, Docker,
-            Jest+RTL, Retool, Storybook
-          </span>
-        </div>
       </div>
     </div>
   );
