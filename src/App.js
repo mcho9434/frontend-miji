@@ -5,13 +5,15 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import NoPage from "./pages/NoPage";
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import CaseStudies from "./pages/CaseStudies";
 import Notion from "./pages/CaseStudies/Notion";
 import ResumeLanding from "./pages/ResumeLanding";
 import CoolStuff from "./pages/CoolStuff";
 
 function App() {
+  console.log(window.location);
+
   return (
     <div className="font-satoshi">
       <BrowserRouter>

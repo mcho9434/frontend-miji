@@ -2,11 +2,10 @@ import React from "react";
 import Card from "../../components/Card";
 import useIsMobile from "../../utils/useIsMobile";
 import Divider from "../../components/Divider";
-import COOL_ITEMS from "./COOL_ITEMS.js";
+import COOL_ITEMS from "../../constants/COOL_ITEMS";
 import CoolItem from "./CoolItem";
 import clsx from "clsx";
 const CoolStuff = () => {
-  console.log(COOL_ITEMS[0]);
   const isMobile = useIsMobile();
 
   return (

@@ -3,7 +3,7 @@ import React from "react";
 import Divider from "../../components/Divider";
 import Card from "../../components/Card";
 
-import PORTFOLIO_DATA from "./PORTFOLIO_DATA";
+import PORTFOLIO_DATA from "../../constants/PORTFOLIO_DATA";
 import PortfolioRow from "./PortfolioRow";
 
 const Portfolio = () => {
@@ -11,7 +11,7 @@ const Portfolio = () => {
     <Card>
       {PORTFOLIO_DATA.map((section, idx) => {
         return (
-          <>
+          <React.Fragment key={section.title}>
             <PortfolioRow
               title={section.title}
               location={section.location}
@@ -24,7 +24,7 @@ const Portfolio = () => {
               {section}
             </PortfolioRow>
             {idx !== section.length - 1 && <Divider />}
-          </>
+          </React.Fragment>
         );
       })}
     </Card>
