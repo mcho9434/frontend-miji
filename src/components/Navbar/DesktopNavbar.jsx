@@ -46,7 +46,7 @@ const DesktopNavbar = () => {
                     key={navItem.to}
                     to={navItem.to}
                     className={clsx(
-                      "transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg"
+                      "transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg flex justify-center items-center"
                     )}
                   >
                     {navItem.title}
