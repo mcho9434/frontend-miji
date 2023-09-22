@@ -13,31 +13,38 @@ const PortfolioRow = ({
 }) => {
   const isMobile = useIsMobile();
   return (
-    <div className="">
+    <div
+      className={clsx({
+        "animate-title-slide-left-default": imageFirst,
+        "animate-title-slide-right-default": !imageFirst,
+      })}
+    >
       <div className="flex w-full justify-between">
         <div>
-          <span className="text-xl font-semibold mr-4">{title}</span>
-          {!isMobile && <span className="!justify-self-end">{location}</span>}
+          <span className="text-3xl font-semibold mr-4">{title}</span>
+          {!isMobile && (
+            <span className="!justify-self-end text-3xl">{location}</span>
+          )}
         </div>
-        <span className="text-lg italic">{date}</span>
+        <span className="italic text-3xl">{date}</span>
       </div>
       <div
         className={clsx("mt-4 flex", {
-          "gap-x-2": !isMobile,
-          "flex-col gap-y-2": isMobile,
+          "gap-x-4": !isMobile,
+          "flex-col gap-y-4": isMobile,
         })}
       >
         {imageFirst && (
           <img
-            className="w-80 aspect-square object-cover object-center"
+            className="w-80 aspect-square object-cover object-center rounded-lg"
             src={src}
             alt={alt}
           />
         )}
-        <div className="">&emsp;{body}</div>
+        <div className="text-xl">&emsp;{body}</div>
         {!imageFirst && (
           <img
-            className="w-80 aspect-square object-cover object-center"
+            className="w-80 aspect-square object-cover object-center rounded-lg"
             src={src}
             alt={alt}
           />
