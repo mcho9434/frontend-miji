@@ -34,7 +34,7 @@ const PortfolioRow = ({
           "flex-col gap-y-4": isMobile,
         })}
       >
-        {imageFirst && (
+        {((imageFirst && !isMobile) || isMobile) && (
           <img
             className="w-80 aspect-square object-cover object-center rounded-lg"
             src={src}
@@ -42,7 +42,7 @@ const PortfolioRow = ({
           />
         )}
         <div className="text-xl">&emsp;{body}</div>
-        {!imageFirst && (
+        {!((imageFirst && !isMobile) || isMobile) && (
           <img
             className="w-80 aspect-square object-cover object-center rounded-lg"
             src={src}

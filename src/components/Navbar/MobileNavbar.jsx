@@ -45,7 +45,7 @@ const MobileNavbar = () => {
                       key={navItem.to}
                       to={navItem.to}
                       className={clsx(
-                        "transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg"
+                        "transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg text-center"
                       )}
                     >
                       {navItem.title}
