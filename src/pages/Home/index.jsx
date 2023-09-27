@@ -14,11 +14,11 @@ const Home = () => {
           </div>
           <div className="mt-4 animate-title-slide-up-default text-lg">
             <div className="">
-              &emsp; I'm currently a senior at the University of Southern
-              California studying computer science and entrepreneurship. Every
-              part of this website is made from scratch using React and
-              TailwindCSS(Google Analytics WIP)! I use this site to host my
-              previous work but also fun side projects or ideas. Take a look!
+              &emsp; I'm a product-focused full-stack engineer focused on
+              writing clean, simple code. Every part of this website is made
+              from using React and TailwindCSS with hosting on Netlify! I use
+              this site to showcase my previous work but also fun side projects
+              or ideas. Take a look!
             </div>
           </div>
         </div>
