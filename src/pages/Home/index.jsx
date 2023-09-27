@@ -16,9 +16,10 @@ const Home = () => {
             <div className="">
               &emsp; I'm a product-focused full-stack engineer focused on
               writing clean, simple code. Every part of this website is made
-              from using React and TailwindCSS with hosting on Netlify! I use
-              this site to showcase my previous work but also fun side projects
-              or ideas. Take a look!
+              from using React and TailwindCSS with hosting on Netlify! This
+              site is to showcase my previous work and fun side projects or
+              ideas. It's a simple site, no fancy animations or crazy
+              transitions. 
             </div>
           </div>
         </div>

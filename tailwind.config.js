@@ -8,19 +8,19 @@ module.exports = {
       },
       keyframes: {
         "title-slide-down": {
-          "0%": { transform: "translateY(-1000px)" },
+          "0%": { transform: "translateY(-100vh)" },
           "100%": { transform: "translateY(0)" },
         },
         "title-slide-up": {
-          "0%": { transform: "translateY(1000px)" },
+          "0%": { transform: "translateY(100vh)" },
           "100%": { transform: "translateY(0)" },
         },
         "title-slide-right": {
-          "0%": { transform: "translateX(1000px)" },
+          "0%": { transform: "translateX(100vh)" },
           "100%": { transform: "translateX(0)" },
         },
         "title-slide-left": {
-          "0%": { transform: "translateX(-1000px)" },
+          "0%": { transform: "translateX(-100vh)" },
           "100%": { transform: "translateX(0)" },
         },
       },
