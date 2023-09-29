@@ -3,7 +3,7 @@ const PORTFOLIO_DATA = [
     title: "Beacons 2.0",
     location: "San Francisco, California",
     date: "May 2023 - August 2023",
-    body: "I went back to Beacons for my summer internship. I heavily leveraged the reputation and trust from my previous internship to work on significantly higher trust tasks. I also took the opportunity to switch teams, gaining a wider breadth of experience and expanding my network. High-significance tasks included things like rewriting the user suspension infrastructure, implementing a new end-to-end email notification system, and contributing to the first company-wide component library. Being able to engage in discussions about these more complex tasks with the CTO or head of engineering was also a huge opportunity and learning moment. ",
+    body: "I went back to Beacons for my summer internship. I heavily leveraged the reputation and trust from my previous internship to work on significantly higher trust tasks. I also took the opportunity to switch teams, gaining a wider breadth of experience and expanding my network. High-significance tasks included things like rewriting the user suspension infrastructure, implementing a new end-to-end email notification system, and contributing to the first company-wide component library. Being able to engage in discussions about these more complex tasks with the CTO or head of engineering was also a huge opportunity and learning moment. Here's a picture from when my sister visited the office. ",
     src: "portfolio/beacons_office.png",
     alt: "beacons office",
   },
