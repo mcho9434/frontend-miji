@@ -27,7 +27,7 @@ const PORTFOLIO_DATA = [
     title: "Lavalab",
     location: "Los Angeles, California",
     date: "January 2022 - Present",
-    body: "Lavalab is a student-run entrepreneurial incubator program that runs over the course of a semester from ideation to demo-day. My team and I pitched Cora, an emotionally intelligent toy for children to help regulate emotions. It was great to wear so many hats in a short time from developer to pitch-deck maker. At the end of the semester my team and I pitched to a panel of venture capitalists and entrepreneurs. Here’s a prototype of Cora(nervous) who was a combination of a dollar-store stuffed animal and an Arduino Uno!",
+    body: "Lavalab is a student-run entrepreneurial incubator program that runs over the course of a semester from ideation to demo-day. My team and I pitched Cora, an emotionally intelligent toy for children to help regulate emotions. It was great to wear so many hats in a short time from developer to pitch-deck maker. At the end of the semester my team and I pitched to a panel of venture capitalists and entrepreneurs. Here’s a prototype of Cora(nervous) who was a combination of a dollar-store stuffed animal and an Arduino Uno! It was awesome to get to sew + solder this kind of product, rather than just a software product.",
     src: "portfolio/lavalab1.jpg",
     alt: "lavalab cora",
   },
