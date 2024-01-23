@@ -7,7 +7,7 @@ const CatanBuddy = () => {
   // game state
   const [gameState, setGameState] = useState("Setup");
   const [maxTurnTime, setMaxTurnTime] = useState(90);
-  const [maxPlaceTime, setMaxPlaceTime] = useState(180);
+  const [playerCount, setPlayerCount] = useState(4);
   const [playerNames, setPlayerNames] = useState({
     player1: "",
     player2: "",
@@ -25,33 +25,23 @@ const CatanBuddy = () => {
         setGameState={setGameState}
         maxTurnTime={maxTurnTime}
         setMaxTurnTime={setMaxTurnTime}
-        maxPlaceTime={maxPlaceTime}
-        setMaxPlaceTime={setMaxPlaceTime}
         playerNames={playerNames}
         setPlayerNames={setPlayerNames}
         errorMessage={errorMessage}
         setErrorMessage={setErrorMessage}
+        playerCount={playerCount}
+        setPlayerCount={setPlayerCount}
       />
     );
   }
-  // if (gameState === "Placement") {
-  //   return (
-  //     <Placement
-  //       setGameState={setGameState}
-  //       maxTurnTime={maxTurnTime}
-  //       maxPlaceTime={maxPlaceTime}
-  //       playerNames={playerNames}
-  //       setPlayerNames={setPlayerNames}
-  //     />
-  //   );
-  // }
+
   return (
     <Game
       setGameState={setGameState}
       maxTurnTime={maxTurnTime}
-      maxPlaceTime={maxPlaceTime}
       playerNames={playerNames}
       setPlayerNames={setPlayerNames}
+      playerCount={playerCount}
     />
   );
 };

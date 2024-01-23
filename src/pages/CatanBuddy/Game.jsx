@@ -27,9 +27,9 @@ const rollMap = {
 const Game = ({
   setGameState,
   maxTurnTime,
-  maxPlaceTime,
   playerNames,
   setPlayerNames,
+  playerCount
 }) => {
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
@@ -162,7 +162,7 @@ const Game = ({
                   });
                 }
                 setCurrentPlayerIndex((prevIndex) => {
-                  if (prevIndex === 5) {
+                  if (prevIndex === playerCount-1) {
                     return 0;
                   } else {
                     return prevIndex + 1;
@@ -199,6 +199,8 @@ const Game = ({
                   player2: "",
                   player3: "",
                   player4: "",
+                  player5: "",
+                  player6: "",
                 });
                 setGameState("Setup");
               }}
