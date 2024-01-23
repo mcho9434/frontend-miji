@@ -29,7 +29,7 @@ const Game = ({
   maxTurnTime,
   playerNames,
   setPlayerNames,
-  playerCount
+  playerCount,
 }) => {
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
@@ -78,7 +78,12 @@ const Game = ({
         <div className="w-full text-lg">Catan buddy</div>
         <Divider />
         <div className="flex flex-col items-center">
-          <div className="text-2xl">{players[currentPlayerIndex]}'s turn</div>
+          <div className="text-2xl">
+            {players[currentPlayerIndex]
+              ? players[currentPlayerIndex]
+              : "Player " + (currentPlayerIndex + 1)}
+            's turn
+          </div>
           {!isTimeUp ? (
             <div
               className={clsx({
@@ -162,7 +167,7 @@ const Game = ({
                   });
                 }
                 setCurrentPlayerIndex((prevIndex) => {
-                  if (prevIndex === playerCount-1) {
+                  if (prevIndex === playerCount - 1) {
                     return 0;
                   } else {
                     return prevIndex + 1;
