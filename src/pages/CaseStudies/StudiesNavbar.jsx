@@ -14,6 +14,11 @@ const StudiesNavbar = () => {
           Catan Buddy
         </div>
       </Link>
+      <Link to="/case-studies/three-fold-viewport">
+        <div className="transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg">
+          3-fold viewport
+        </div>
+      </Link>
     </div>
   );
 };
