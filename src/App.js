@@ -10,7 +10,9 @@ import Notion from "./pages/CaseStudies/Notion";
 import ResumeLanding from "./pages/ResumeLanding";
 import CoolStuff from "./pages/CoolStuff";
 import Viewport from "./pages/CaseStudies/ThreeFoldViewport";
-
+import YoutubeDataLoader from "./pages/YoutubeDataLoader";
+import Up from "./pages/YoutubeDataLoader/Up";
+import Down from "./pages/YoutubeDataLoader/Down";
 function App() {
     console.log(window.location);
 
@@ -30,6 +32,15 @@ function App() {
                         <Route
                             path="case-studies/three-fold-viewport"
                             element={<Viewport />}
+                        />
+                        <Route
+                            path="youtube-data-loader"
+                            element={<YoutubeDataLoader />}
+                        />
+                        <Route path="youtube-data-loader/up" element={<Up />} />
+                        <Route
+                            path="youtube-data-loader/down"
+                            element={<Down />}
                         />
                         <Route path="r" element={<ResumeLanding />} />
                         <Route path="cool-stuff" element={<CoolStuff />} />
