@@ -13,6 +13,9 @@ import Viewport from "./pages/CaseStudies/ThreeFoldViewport";
 import YoutubeDataLoader from "./pages/YoutubeDataLoader";
 import Up from "./pages/YoutubeDataLoader/Up";
 import Down from "./pages/YoutubeDataLoader/Down";
+import Essays from "./pages/Essays";
+import Essay from "./pages/Essay";
+
 function App() {
     console.log(window.location);
 
@@ -44,6 +47,8 @@ function App() {
                         />
                         <Route path="r" element={<ResumeLanding />} />
                         <Route path="cool-stuff" element={<CoolStuff />} />
+                        <Route path="/essays" element={<Essays />} />
+                        <Route path="/essays/:slug" element={<Essay />} />
                         <Route path="*" element={<NoPage />} />
                     </Route>
                 </Routes>

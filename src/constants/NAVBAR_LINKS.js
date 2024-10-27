@@ -31,6 +31,7 @@ export const PAGE_NAV = [
   { title: "Portfolio", to: "/portfolio" },
   { title: "Case Studies", to: "/case-studies" },
   { title: "Cool Stuff", to: "/cool-stuff" },
+  { title: "Essays", to: "/essays" },
 ];
 
 export const TITLE_MAP = {};
