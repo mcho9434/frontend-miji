@@ -7,6 +7,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import CaseStudies from "./pages/CaseStudies";
 import Notion from "./pages/CaseStudies/Notion";
+import BOCC from "./pages/CaseStudies/BOCC";
 import ResumeLanding from "./pages/ResumeLanding";
 import CoolStuff from "./pages/CoolStuff";
 import Viewport from "./pages/CaseStudies/ThreeFoldViewport";
@@ -35,6 +36,10 @@ function App() {
                         <Route
                             path="case-studies/three-fold-viewport"
                             element={<Viewport />}
+                        />
+                        <Route
+                            path="case-studies/BOCC"
+                            element={<BOCC />}
                         />
                         <Route
                             path="youtube-data-loader"

@@ -28,7 +28,7 @@ export const ICON_NAV = [
 
 export const PAGE_NAV = [
   { title: "Home", to: "/" },
-  { title: "Portfolio", to: "/portfolio" },
+  // { title: "Portfolio", to: "/portfolio" },
   { title: "Case Studies", to: "/case-studies" },
   { title: "Cool Stuff", to: "/cool-stuff" },
   { title: "Essays", to: "/essays" },

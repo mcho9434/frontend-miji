@@ -19,6 +19,11 @@ const StudiesNavbar = () => {
           3-fold viewport
         </div>
       </Link>
+      <Link to="/case-studies/BOCC">
+        <div className="transition ease-in-out hover:-translate-y-1 shadow-md p-3 border border-black rounded-lg">
+          BOCC
+        </div>
+      </Link>
     </div>
   );
 };
