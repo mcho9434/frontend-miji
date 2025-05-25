@@ -1,5 +1,19 @@
 const PORTFOLIO_DATA = [
     {
+        title: "Pallet",
+        date: "August 2024 - Present",
+        body: "Building CoPallet, an logistics AI agent that enables dynamic problem-solving through intelligent interventions, featuring a graph-based configuration system with versioning and action management, while leading sales demos for enterprise logistics accounts. And I took this awesome picture of the office dog.",
+        src: "portfolio/pallet.jpg",
+        alt: "pallet",
+    },
+    {
+        title: "Lifetime Activites Pickleball Tournament",
+        date: "April 2025",
+        body: "Silver in the Lifetime Activites Tournament(3.5-4.0)! First pickleball medal :)",
+        src: "portfolio/pickleball.jpg",
+        alt: "lifetime",
+    },
+    {
         title: "Beacons 2.0",
         date: "May 2023 - August 2023",
         body: "Got to take on some high-impact projects like rewriting the user suspension infrastructure and implementing a new email notification system. And some family got to visit the office!",
@@ -28,7 +42,7 @@ const PORTFOLIO_DATA = [
         alt: "lavalab cora",
     },
     {
-        title: "Code the Change",   
+        title: "Code the Change",
         date: "August 2020 - Present",
         body: "Built products for LA-based nonprofits through USC's Code the Change, working on diverse projects from urban gardening initiatives to human trafficking prevention.",
         src: "portfolio/CTC.jpg",
