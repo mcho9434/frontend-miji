@@ -25,7 +25,7 @@ const COOL_ITEMS = [
     name: "The Morris",
     description: "Contemporary American food! Ducks!",
     link: "https://modedesigns.com/",
-    image: "CoolStuff/morris.png",
+    image: "CoolStuff/morris.jpg",
     alt: "morris",
   },
   {

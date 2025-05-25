@@ -21,14 +21,14 @@ export const ICON_NAV = [
   },
   {
     icon: <GitHubIcon className="!w-8 !h-8" />,
-    location: "https://github.com/mcho9434",
+    location: "https://github.com/mjycho",
     href: "",
   },
 ];
 
 export const PAGE_NAV = [
   { title: "Home", to: "/" },
-  // { title: "Portfolio", to: "/portfolio" },
+  { title: "Stuff I've Done", to: "/portfolio" },
   { title: "Case Studies", to: "/case-studies" },
   { title: "Cool Stuff", to: "/cool-stuff" },
   { title: "Essays", to: "/essays" },

@@ -11,8 +11,7 @@ const CoolStuff = () => {
   return (
     <Card>
       <div>
-        Things I'm a fan of! Some of these are more wishlist items than things I
-        use :(
+        Things I'm a fan of! 
       </div>
       <Divider />
       <div

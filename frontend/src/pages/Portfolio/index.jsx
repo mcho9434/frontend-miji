@@ -1,34 +1,35 @@
 import React from "react";
-
-import Divider from "../../components/Divider";
 import Card from "../../components/Card";
-
+import useIsMobile from "../../utils/useIsMobile";
+import clsx from "clsx";
 import PORTFOLIO_DATA from "../../constants/PORTFOLIO_DATA";
-import PortfolioRow from "./PortfolioRow";
+import PortfolioGridItem from "./PortfolioGridItem";
 
 const Portfolio = () => {
-  return (
-    <Card>
-      {PORTFOLIO_DATA.map((section, idx) => {
-        return (
-          <React.Fragment key={section.title}>
-            <PortfolioRow
-              title={section.title}
-              location={section.location}
-              date={section.date}
-              body={section.body}
-              src={section.src}
-              alt={section.alt}
-              imageFirst={idx % 2 === 1}
+    const isMobile = useIsMobile();
+
+    return (
+        <Card>
+            <div
+                className="grid gap-6"
+                style={{
+                    gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
+                }}
             >
-              {section}
-            </PortfolioRow>
-            {idx !== section.length - 1 && <Divider />}
-          </React.Fragment>
-        );
-      })}
-    </Card>
-  );
+                {PORTFOLIO_DATA.map((item, idx) => (
+                    <PortfolioGridItem
+                        key={item.title}
+                        title={item.title}
+                        location={item.location}
+                        date={item.date}
+                        body={item.body}
+                        src={item.src}
+                        alt={item.alt}
+                    />
+                ))}
+            </div>
+        </Card>
+    );
 };
 
 export default Portfolio;

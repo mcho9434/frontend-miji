@@ -15,11 +15,9 @@ const Home = () => {
           <div className="mt-4 animate-title-slide-up-default text-lg">
             <div className="">
               &emsp; I'm a product-focused full-stack engineer focused on
-              writing clean, simple code. Every part of this website is made
-              from using React and TailwindCSS with hosting on Netlify(and optimized with Cloudflare)! This
+              writing clean, simple code. This
               site is to showcase my previous work and fun side projects or
-              ideas. It's a simple site, no fancy animations or crazy
-              transitions. 
+              ideas. 
             </div>
           </div>
         </div>
