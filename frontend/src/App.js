@@ -50,7 +50,6 @@ function App() {
                             path="youtube-data-loader/down"
                             element={<Down />}
                         />
-                        <Route path="r" element={<ResumeLanding />} />
                         <Route path="cool-stuff" element={<CoolStuff />} />
                         <Route path="/essays" element={<Essays />} />
                         <Route path="/essays/:slug" element={<Essay />} />
