@@ -36,17 +36,16 @@ const Waiting = () => {
             <div className="text-lg">
                 &emsp; And there lies the key idea. There's a certain beauty in
                 waiting for something. It exists as a intangible, incalculably
-                pure concept. On the other side, there's a underlying danger
-                of ignorance. As you speed down the highway to glory, you may miss the
-                warning signs along the way.
+                pure concept. On the other side, there's a underlying danger of
+                ignorance. As you speed down the highway to glory, you may miss
+                the warning signs along the way.
             </div>
             <div className="text-lg">
                 &emsp; For example, I'm slowly seeing this as I await founding a
                 company in ~2/3 years. Initially, I saw the glamor of building a
-                killer product and becoming wealthy. Now, I see everyday all the
-                dangers and suffering involved. The original reasons for
-                founding are still valid, but interesting to see how waiting has
-                beautified my process.
+                killer product and becoming wealthy. Now, I feel like it might
+                just suck. The original reasons for founding are still valid,
+                but interesting to see how waiting has beautified my process.
             </div>
         </div>
     );
