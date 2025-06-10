@@ -25,17 +25,17 @@ const SellingStuff = () => {
                 actual thing?
             </div>
             <div className="text-lg">
-                &emsp; This is some meta "let's make the real of MyFitnessPal"
-                stuff, but imagine a company where you pay for the true thing
-                rather than the fantasy of doing so. I do recognize there's
-                usually a couple reasons why the company/user doesn't just do
-                this:
+                &emsp; This is some meta "let's make the MyFitnessPal of
+                MyFitnessPal" stuff, but imagine a company where you pay for the
+                true thing rather than the fantasy/opportunity of doing so. I do
+                recognize there's usually a couple reasons why the company/user
+                doesn't just do this:
             </div>
             <div className="text-lg">
                 - The company doesn't have the resources to actually deliver the
                 thing. (MyFitnessPal) <br />- The task is somewhat difficult for
-                most users. (Duolingo) <br />- The company would lose customers
-                if the users were successful. (Bumble)
+                most users. (Duolingo) <br />- The company would lose if the
+                users were successful. (Bumble)
             </div>
             <div className="text-lg">
                 &emsp; But imagine a company was just like "yea we'll sell you
@@ -54,8 +54,8 @@ const SellingStuff = () => {
                 "buying" a relationship.
             </div>
             <div className="text-lg">
-                TLDR: nothing revolutionary for me here, but maybe some future
-                ideas :?
+                TLDR: nothing revolutionary just a new way to observe products,
+                but maybe some future ideas :?
             </div>
         </div>
     );

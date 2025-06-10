@@ -27,11 +27,11 @@ const Waiting = () => {
             <div className="text-lg">
                 &emsp; And this is where the bus ride comes in. On that bus
                 ride, as I wait to play, the state of the day is truly
-                immaculate. Frankly, there's nothing to even spoil my notion of
-                a "perfect" session. The pickleball for that day exists solely
-                in my mind, with nothing to interrupt it. Of course, at the
-                current moment, the moment I get on the court, this fragile
-                fantasy shatters.
+                immaculate. There's nothing to even spoil my notion of a
+                "perfect" session. The pickleball for that day exists solely in
+                my mind, with nothing to interrupt it. Of course, at the current
+                moment, the moment I get on the court, this fragile fantasy
+                shatters.
             </div>
             <div className="text-lg">
                 &emsp; And there lies the key idea. There's a certain beauty in
