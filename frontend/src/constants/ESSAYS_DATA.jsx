@@ -1,6 +1,6 @@
-import Waiting from "./ESSAY_COMPONENTS/Waiting";
-import SellingStuff from "./ESSAY_COMPONENTS/SellingStuff";
-import Focus from "./ESSAY_COMPONENTS/Focus";
+import Waiting from "../constants/ESSAY_COMPONENTS/Waiting";
+import SellingStuff from "../constants/ESSAY_COMPONENTS/SellingStuff";
+import Focus from "../constants/ESSAY_COMPONENTS/Focus";
 
 const ESSAYS_DATA = [
     {
