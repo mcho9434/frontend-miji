@@ -7,9 +7,9 @@ const PORTFOLIO_DATA = [
         alt: "pallet",
     },
     {
-        title: "Lifetime Activites Pickleball Tournament",
+        title: "First Tournament",
         date: "April 2025",
-        body: "Silver in the Lifetime Activites Tournament(3.5-4.0)! First pickleball medal :)",
+        body: "Silver in the Lifetime Activites Pickleball Tournament(4.0 DUPR)! First pickleball medal :)",
         src: "portfolio/pickleball.jpg",
         alt: "lifetime",
     },
