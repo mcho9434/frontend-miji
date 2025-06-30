@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
 import useIsMobile from "../../utils/useIsMobile";
-import clsx from "clsx";
+
 import PORTFOLIO_DATA from "../../constants/PORTFOLIO_DATA";
 import PortfolioGridItem from "./PortfolioGridItem";
 

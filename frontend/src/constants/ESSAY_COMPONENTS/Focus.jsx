@@ -29,7 +29,7 @@ const Focus = () => {
                 recently). Shilling their product, babbling, useless buzz was
                 about everywhere. Among the fuzz, there were a couple talks
                 about cool AI tools(at the time of writing, Dagger and Cursor
-                are big names). For non-eng folks they'll gain unprecendented
+                were some cool products). For non-eng folks they'll gain unprecendented
                 access to build features previously only doable by engineers.
                 For eng folks, they get to multiply themselves. The 1x engineers
                 become 10x engineers and the 10x engineers become 100x
@@ -67,7 +67,7 @@ const Focus = () => {
             <div className="text-lg">
                 &emsp; Anyway, I think having taste will only get more important
                 over time, and as some 23-year-old, I feel I lack it. Will spend
-                time developing it.
+                some time developing it.
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const DesktopNavbar = () => {
     <>
       <div>
         <nav>
-          <div className="flex w-full justify-around items-center py-2 border-b border-black animate-title-slide-right-default">
+          <div className="flex w-full justify-around items-center py-2 border-b border-black">
             <div className="flex ml-4 gap-4">
               {ICON_NAV.map((navItem) => {
                 if (navItem?.location !== "") {

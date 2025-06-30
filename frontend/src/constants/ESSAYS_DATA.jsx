@@ -1,6 +1,8 @@
 import Waiting from "./ESSAY_COMPONENTS/Waiting.jsx";
 import SellingStuff from "./ESSAY_COMPONENTS/SellingStuff.jsx";
 import Focus from "./ESSAY_COMPONENTS/Focus.jsx";
+import ShotsOnGoal from "./ESSAY_COMPONENTS/ShotsOnGoal.jsx";
+import Micro from "./ESSAY_COMPONENTS/Micro.jsx";
 
 const ESSAYS_DATA = [
     {
@@ -16,6 +18,8 @@ const ESSAYS_DATA = [
         content: <SellingStuff />,
     },
     { id: 3, title: "Focus (6.8.25)", slug: "focus", content: <Focus /> },
+    // { id: 4, title: "Shots on Goal (6.12.25)", slug: "shots-on-goal", content: <ShotsOnGoal /> },
+    // {id: 5, title: "Micro Founders (6.26.25)", slug: "micro-founders", content: <Micro />}
 ];
 
 export default ESSAYS_DATA;
